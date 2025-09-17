@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Gus's Hot Dog King</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="navigation.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Custom Fonts -->
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+    h1, h2, h3 {
+      font-family: 'Lobster', cursive;
+    }
+  </style>
+ 
+</head>
+<body class="flex flex-col min-h-screen bg-gray-50 text-gray-900">
+<header class="w-full bg-white border-b border-yellow-500 py-4">
+  <div class="max-w-screen-xl mx-auto px-4 flex items-center justify-between">
+    <div id="navSidebar" class="flex-1"></div>
+  </div>
+</header>
+
+
+  <!-- Main -->
+  <main class="flex-grow max-w-screen-lg mx-auto px-4 py-10">
+    <!-- Contact Info Section -->
+    <section class="mb-10">
+      <div class="bg-purple-100 p-6 rounded shadow">
+        <h2 class="text-2xl font-bold flex items-center mb-4">
+			<svg class="w-6 h-6 mr-2 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+			<path d="M10 2a6 6 0 00-6 6c0 4.05 6 10 6 10s6-5.95 6-10a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z"/>
+			</svg>
+			10725 Jefferson Ave, Newport News, VA 23601
+			</h2>
+
+        <p class="text-lg font-semibold flex items-center">
+		<svg class="w-5 h-5 mr-2 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+			<path d="M2.003 5.884l3.91-1.955a1 1 0 011.09.217l2.1 2.1a1 1 0 01.217 1.09l-1.955 3.91a11.003 11.003 0 005.516 5.516l3.91-1.955a1 1 0 011.09.217l2.1 2.1a1 1 0 01.217 1.09l-1.955 3.91a1 1 0 01-.942.548C8.01 20 0 11.99 0 2.998a1 1 0 01.548-.942z"/>
+		</svg>
+		<a href="tel:7575951630" class="text-purple-700 hover:underline">(757) 595-1630</a>
+		</p>
+
+
+      </div>
+    </section>
+
+    <!-- Slideshow -->
+    <section class="flex justify-center">
+      <img id="slideshowImage"
+        src="public/images/mom_george.webp"
+        alt="Slideshow"
+        class="rounded-full border-4 border-purple-600 object-cover w-64 h-64 transition duration-500"
+        loading="lazy"
+      />
+    </section>
+  </main>
+
+<footer class="bg-yellow-100 border-t border-yellow-300 text-brown-800 text-sm">
+  <div class="max-w-screen-xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
+
+    <!-- Left: Address and Phone -->
+    <div class="text-center sm:text-left space-y-1">
+      <div class="flex items-center justify-center sm:justify-start gap-2">
+        <svg class="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 2a6 6 0 00-6 6c0 4.05 6 10 6 10s6-5.95 6-10a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z"/>
+        </svg>
+        <span>10725 Jefferson Ave, Newport News, VA 23601</span>
+      </div>
+      <div class="flex items-center justify-center sm:justify-start gap-2">
+        <svg class="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M2.003 5.884l3.91-1.955a1 1 0 011.09.217l2.1 2.1a1 1 0 01.217 1.09l-1.955 3.91a11.003 11.003 0 005.516 5.516l3.91-1.955a1 1 0 011.09.217l2.1 2.1a1 1 0 01.217 1.09l-1.955 3.91a1 1 0 01-.942.548C8.01 20 0 11.99 0 2.998a1 1 0 01.548-.942z"/>
+        </svg>
+        <a href="tel:7575951630" class="hover:underline">(757) 595-1630</a>
+      </div>
+    </div>
+
+    <!-- Right: Facebook Link -->
+    <div class="mt-4 sm:mt-0 flex items-center gap-2">
+      <a href="https://www.facebook.com/Gusshotdogking" target="_blank" class="flex items-center gap-1 hover:text-red-700">
+        <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M22 12c0-5.522-4.478-10-10-10S2 6.478 2 12a9.998 9.998 0 008.187 9.8v-6.93h-2.46v-2.87h2.46V9.845c0-2.438 1.457-3.79 3.686-3.79 1.068 0 2.185.19 2.185.19v2.4h-1.232c-1.215 0-1.593.754-1.593 1.528v1.838h2.713l-.433 2.87h-2.28v6.93A9.998 9.998 0 0022 12z"/>
+        </svg>
+        <span>Follow us on Facebook</span>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Map Section -->
+<div class="mx-auto px-4 py-4 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
+  <div class="relative w-full" style="padding-top: 100%;"> <!-- Square aspect ratio -->
+    <iframe
+      title="Gus's Hot Dog King Location"
+      src="https://www.google.com/maps?q=Gus's+Hot+Dog+King,+Newport+News,+VA&output=embed"
+      class="absolute top-0 left-0 w-full h-full rounded-lg shadow-md"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</div>
+   <!-- Copyright -->
+  <div class="bg-yellow-200 text-center text-xs text-brown-700 py-2 border-t border-yellow-300">
+    © 2025 Gus's Hot Dog King. All rights reserved. Serving Great Hotdogs Since 1972. 
+  </div>
+</footer>
+
+
+
+  <!-- JavaScript -->
+ <script>
+   // Load nav sidebar
+  fetch('nav-sidebar.html')
+    .then(res => res.text())
+    .then(html => {
+      const navSidebar = document.getElementById('navSidebar');
+      if (navSidebar) {
+        navSidebar.innerHTML = html;
+
+        const toggleButton = document.getElementById("toggleSidebar");
+        const sidebar = document.getElementById("sidebar");
+
+        toggleButton?.addEventListener("click", (e) => {
+          e.stopPropagation();
+          sidebar.classList.toggle("-translate-x-full");
+        });
+
+        document.addEventListener("click", (e) => {
+          const clickedInsideSidebar = sidebar?.contains(e.target);
+          const clickedToggle = toggleButton?.contains(e.target);
+          const sidebarVisible = !sidebar?.classList.contains("-translate-x-full");
+
+          if (!clickedInsideSidebar && !clickedToggle && sidebarVisible) {
+            sidebar?.classList.add("-translate-x-full");
+          }
+        });
+      }
+    })
+    .catch(err => console.error('Error loading nav-sidebar:', err));
+
+  // Slideshow logic
+  const slideshowImages = [
+     "public/images/mom_george.webp",
+    "public/images/jukebox.webp",
+    "public/images/banana_pudding.webp",
+    "public/images/bbq_fries.webp",
+    "public/images/gus_with_mobile.webp",
+    "public/images/gus_making_dog.webp",
+    "public/images/hdkcrew.webp",
+    "public/images/ballonpic.webp"
+  ];
+  let currentImg = 0;
+  const slideshowElement = document.getElementById("slideshowImage");
+
+  // Display the first image immediately
+  slideshowElement.src = slideshowImages[currentImg];
+
+  setInterval(() => {
+    currentImg = (currentImg + 1) % slideshowImages.length;
+    slideshowElement.src = slideshowImages[currentImg];
+  }, 2500);
+</script>
+
+</body>
+</html>
