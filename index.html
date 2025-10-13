@@ -48,14 +48,27 @@
 <script async defer crossorigin="anonymous" 
   src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0" nonce="YOUR_NONCE"></script>
 
- <header class="w-full bg-white border-b border-yellow-500 py-4">
-  <div class="max-w-screen-xl mx-auto px-4 flex items-center justify-between">
-    <div id="navSidebar" class="flex-1">
-      <!-- Navigation content will be loaded here -->
-    </div>
-  </div>
-</header>
+  <header class="w-full bg-white border-none py-4 px-4 flex items-center justify-between" role="banner">
+  <!-- Skip to Content -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-purple-900 focus:text-white focus:p-2 focus:rounded">Skip to main content</a>
 
+  <!-- Logo / Title -->
+  <div class="flex items-center gap-4">
+    <img src="public/images/HDK_LOGO.webp" alt="Gus's Hot Dog King logo" class="w-24 h-24 sm:w-32 sm:h-32 object-contain" />
+    <h1 class="text-2xl sm:text-4xl font-bold text-purple-900">Gus's Hot Dog King</h1>
+  </div>
+
+  <!-- Mobile Menu Button -->
+  <button id="toggleSidebar" aria-label="Open Menu" aria-controls="sidebar" aria-expanded="false"
+          class="p-2 bg-purple-900 text-white rounded focus:outline-none focus:ring-2 focus:ring-yellow-400 sm:hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  </button>
+
+  <!-- Placeholder for nav -->
+  <div id="navSidebar"></div>
+</header>
 
   <main role="main" aria-label="Landing page for Gus's Hot Dog King" class="min-h-screen">
 
@@ -93,23 +106,33 @@
       </div>
     </section>
 
-    <section class="bg-purple-100 py-10 text-center px-6">
-      <h3 class="text-2xl font-bold text-purple-900 mb-4">Dine In or Take Out Today</h3>
-      <p class="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
-        Whether you're dining in with family or grabbing <strong>hot dogs to go</strong>, Gus's Hot Dog King is your destination for flavor, tradition, and fast service. Located conveniently near Jefferson Ave in <strong>Newport News, VA</strong>, we make it easy to satisfy your cravings.
-      </p>
-      <a href="menu.html" class="inline-block bg-yellow-800 hover:bg-yellow-900 text-white text-lg font-semibold py-3 px-6 rounded-xl shadow-md transition duration-300">
-        View Our Menu
-      </a>
-    </section>
+   <section class="bg-purple-100 py-10 text-center px-6">
+  <h3 class="text-2xl font-bold text-purple-900 mb-4">Dine In or Take Out Today</h3>
+  <p class="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
+    Whether you're dining in with family or grabbing <strong>hot dogs to go</strong>, Gus's Hot Dog King is your destination for flavor, tradition, and fast service. Located conveniently near Jefferson Ave in <strong>Newport News, VA</strong>, we make it easy to satisfy your cravings.
+  </p>
+  <a href="menu.html" class="inline-flex items-center justify-center bg-yellow-800 hover:bg-yellow-900 text-white text-lg font-semibold py-3 px-6 rounded-xl shadow-md transition duration-300 space-x-3">
+    <!-- Menu SVG Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+    </svg>
+    <span>View Our Menu</span>
+  </a>
+</section>
+
 
     <section class="bg-yellow-100 py-10 px-6 text-center rounded-2xl shadow-lg max-w-4xl mx-auto mt-10">
-      <h2 class="text-3xl font-bold text-gray-800 mb-4">Craving The King Of Hot Dogs? Get it delivered!</h2>
-      <p class="text-lg text-gray-700 mb-6">Order your favorites from Gus's Hot Dog King and have them delivered straight to your door with DoorDash.</p>
-      <a href="https://www.doordash.com/store/gus's-hot-dog-king-newport-news-926834/18420549/?event_type=autocomplete&pickup=false" target="_blank" class="inline-block bg-gray-800 text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-gray-900 transition duration-300">
-        Order Now on DoorDash
-      </a>
-    </section>
+  <h2 class="text-3xl font-bold text-gray-800 mb-4">Craving The King Of Hot Dogs? Get it delivered!</h2>
+  <p class="text-lg text-gray-700 mb-6">Order your favorites from Gus's Hot Dog King and have them delivered straight to your door with DoorDash.</p>
+  <a href="https://www.doordash.com/store/gus's-hot-dog-king-newport-news-926834/18420549/?event_type=autocomplete&pickup=false" target="_blank" class="inline-flex items-center justify-center bg-gray-800 text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-gray-900 transition duration-300 space-x-3">
+    <!-- DoorDash SVG Logo in Red -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="#FF3000">
+      <path d="M22.7 7.3c0-.4-.3-.7-.7-.7h-7.6l-1.8 5.2h3.5c.4 0 .7.3.7.7s-.3.7-.7.7h-4.7c-.3 0-.5-.2-.6-.5l-1.8-5.2c-.1-.3.1-.6.4-.7.1 0 .1 0 .2 0h9.6c.4 0 .7.3.7.7 0 .1 0 .2-.1.2l-2.2 6.5c-.1.3-.4.5-.7.5h-6.7c-.4 0-.7-.3-.7-.7s.3-.7.7-.7h5.3l.9-2.7h-3.5c-.3 0-.5-.2-.6-.5l-1.8-5.2c-.1-.3.1-.6.4-.7.1 0 .1 0 .2 0h9.6c.4 0 .7.3.7.7s-.3.7-.7.7z"/>
+    </svg>
+    <span>Order Now on DoorDash</span>
+  </a>
+</section>
+
 
     <!-- Reviews Section -->
     <section class="py-16 bg-gray-50">
@@ -330,11 +353,19 @@
     </section>
 
     <!-- Location Section -->
-    <section class="py-16 bg-white">
-      <div class="max-w-screen-xl mx-auto px-4 text-center">
-        <h2 class="text-4xl font-bold text-gray-800 mb-8">Visit Us Today</h2>
-        <p class="text-lg text-gray-600 mb-8">Located conveniently on Jefferson Avenue in Newport News, Virginia</p>
-        
+<section class="py-16 bg-white">
+  <div class="max-w-screen-xl mx-auto px-4 text-center">
+    <h2 class="text-4xl font-bold text-gray-800 mb-8">Visit Us Today</h2>
+    <p class="text-lg text-gray-600 mb-8 inline-flex items-center justify-center space-x-2">
+      <!-- Google Maps Pin SVG Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5z"/>
+      </svg>
+      <span>Located conveniently on Jefferson Avenue in Newport News, Virginia</span>
+    </p>
+  </div>
+
+
         <!-- Google Maps Embed -->
 <div class="mx-auto px-4 py-4 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
   <div class="relative w-full" style="padding-top: 100%;"> <!-- Square aspect ratio -->
@@ -349,6 +380,7 @@
     </iframe>
   </div>
 </div>
+</section>
    <!-- Copyright -->
   <div class="bg-yellow-200 text-center text-xs text-brown-700 py-2 border-t border-yellow-300">
     © 2025 Gus's Hot Dog King. All rights reserved. Serving Great Hotdogs Since 1972. 

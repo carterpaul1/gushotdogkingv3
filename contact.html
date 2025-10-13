@@ -19,11 +19,28 @@
  
 </head>
 <body class="flex flex-col min-h-screen bg-gray-50 text-gray-900">
-<header class="w-full bg-white border-b border-yellow-500 py-4">
-  <div class="max-w-screen-xl mx-auto px-4 flex items-center justify-between">
-    <div id="navSidebar" class="flex-1"></div>
+<header class="w-full bg-white border-none py-4 px-4 flex items-center justify-between" role="banner">
+  <!-- Skip to Content -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-purple-900 focus:text-white focus:p-2 focus:rounded">Skip to main content</a>
+
+  <!-- Logo / Title -->
+  <div class="flex items-center gap-4">
+    <img src="public/images/HDK_LOGO.webp" alt="Gus's Hot Dog King logo" class="w-24 h-24 sm:w-32 sm:h-32 object-contain" />
+    <h1 class="text-2xl sm:text-4xl font-bold text-purple-900">Gus's Hot Dog King</h1>
   </div>
+
+  <!-- Mobile Menu Button -->
+  <button id="toggleSidebar" aria-label="Open Menu" aria-controls="sidebar" aria-expanded="false"
+          class="p-2 bg-purple-900 text-white rounded focus:outline-none focus:ring-2 focus:ring-yellow-400 sm:hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  </button>
+
+  <!-- Placeholder for nav -->
+  <div id="navSidebar"></div>
 </header>
+
 
 
   <!-- Main -->
