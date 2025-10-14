@@ -1,63 +1,105 @@
-<!-- Desktop Navigation -->
+<!-- Navigation Links (Horizontal for Desktop) -->
 <nav class="hidden sm:flex ml-auto space-x-8 text-lg text-purple-900 font-semibold"
      aria-label="Primary Navigation">
-  <a href="index.html" class="hover:underline focus:outline-none focus:ring-2 focus:ring-purple-700 focus:rounded-sm">Home</a>
-  <a href="about.html" class="hover:underline focus:outline-none focus:ring-2 focus:ring-purple-700 focus:rounded-sm">About Us</a>
-  <a href="menu.html" class="hover:underline focus:outline-none focus:ring-2 focus:ring-purple-700 focus:rounded-sm">Menu Page</a>
-  <a href="contact.html" class="hover:underline focus:outline-none focus:ring-2 focus:ring-purple-700 focus:rounded-sm">Contact Us</a>
+  <a href="index.html"
+     class="inline-flex items-center justify-center min-h-[44px] px-4
+            hover:underline focus:outline-none focus:ring-2 focus:ring-purple-700 focus:rounded-sm">
+    Home
+  </a>
+  <a href="about.html"
+     class="inline-flex items-center justify-center min-h-[44px] px-4
+            hover:underline focus:outline-none focus:ring-2 focus:ring-purple-700 focus:rounded-sm">
+    About Us
+  </a>
+  <a href="menu.html"
+     class="inline-flex items-center justify-center min-h-[44px] px-4
+            hover:underline focus:outline-none focus:ring-2 focus:ring-purple-700 focus:rounded-sm">
+    Menu Page
+  </a>
+  <a href="contact.html"
+     class="inline-flex items-center justify-center min-h-[44px] px-4
+            hover:underline focus:outline-none focus:ring-2 focus:ring-purple-700 focus:rounded-sm">
+    Contact Us
+  </a>
 </nav>
 
 <!-- Mobile Sidebar -->
-<aside id="sidebar"
-       class="fixed top-0 left-0 w-64 h-full bg-purple-900 text-white transform -translate-x-full transition-transform duration-300 z-50 shadow-lg sm:hidden"
-       aria-label="Mobile Navigation"
-       role="navigation">
-
+<aside
+  id="sidebar"
+  class="fixed top-0 left-0 w-64 h-full bg-purple-900 text-white transform -translate-x-full transition-transform duration-300 z-50 shadow-lg sm:hidden"
+  aria-label="Mobile Navigation"
+  role="navigation"
+>
   <div class="flex flex-col h-full p-6 justify-between">
-    
     <!-- Top: Close Button & Logo -->
     <div>
-      <button id="closeSidebar"
-              aria-label="Close Menu"
-              class="text-white focus:outline-none focus:ring-2 focus:ring-yellow-400 mb-6 block ml-auto"
-              type="button">
-        <svg xmlns="http://www.w3.org/2000/svg"
-             class="h-8 w-8"
-             fill="none"
-             viewBox="0 0 24 24"
-             stroke="currentColor"
-             aria-hidden="true">
-          <path stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12" />
+      <button
+        id="closeSidebar"
+        aria-label="Close Menu"
+        class="text-white focus:outline-none focus:ring-2 focus:ring-yellow-400 mb-6 block ml-auto"
+        type="button"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-8 w-8"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
         </svg>
       </button>
 
       <!-- Sidebar Logo / Title -->
       <div class="flex flex-col items-center mb-8">
-        <img src="public/images/HDK_LOGO.webp"
-             alt="Gus's Hot Dog King logo"
-             class="w-28 h-28 object-contain mb-2" />
-        <h2 class="text-xl font-bold text-white text-center">Gus's Hot Dog King</h2>
+        <img
+          src="public/images/HDK_LOGO.webp"
+          alt="Gus's Hot Dog King logo"
+          class="w-28 h-28 object-contain mb-2"
+        />
+        <h2 class="text-xl font-bold text-white text-center">
+          Gus's Hot Dog King
+        </h2>
       </div>
     </div>
 
-    <!-- Navigation Links (Vertical) -->
     <nav class="flex flex-col gap-4" aria-label="Mobile Navigation Links">
-      <a href="index.html" class="block text-lg hover:underline focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:rounded-sm">Home</a>
-      <a href="about.html" class="block text-lg hover:underline focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:rounded-sm">About Us</a>
-      <a href="menu.html" class="block text-lg hover:underline focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:rounded-sm">Menu Page</a>
-      <a href="contact.html" class="block text-lg hover:underline focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:rounded-sm">Contact Us</a>
-    </nav>
+  <a href="index.html"
+     class="inline-flex items-center min-h-[44px] px-4 text-lg
+            hover:underline focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:rounded-sm">
+    Home
+  </a>
+  <a href="about.html"
+     class="inline-flex items-center min-h-[44px] px-4 text-lg
+            hover:underline focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:rounded-sm">
+    About Us
+  </a>
+  <a href="menu.html"
+     class="inline-flex items-center min-h-[44px] px-4 text-lg
+            hover:underline focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:rounded-sm">
+    Menu Page
+  </a>
+  <a href="contact.html"
+     class="inline-flex items-center min-h-[44px] px-4 text-lg
+            hover:underline focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:rounded-sm">
+    Contact Us
+  </a>
+</nav>
 
     <!-- Bottom: Sidebar Image -->
     <div class="mt-auto flex justify-center">
-      <img src="public/images/stavroula.webp"
-           alt="Portrait of Stavroula, founder of Gus's Hot Dog King"
-           class="rounded-full w-36 h-36 border-4 border-yellow-400 object-cover"
-           loading="lazy" />
+      <img
+        src="public/images/stavroula.webp"
+        alt="Portrait of Stavroula, founder of Gus's Hot Dog King"
+        class="rounded-full w-36 h-36 border-4 border-yellow-400 object-cover"
+        loading="lazy"
+      />
     </div>
-
   </div>
 </aside>

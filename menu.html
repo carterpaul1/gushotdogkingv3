@@ -1,326 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Explore Gus's Hot Dog King's legendary menu—hot dogs, juicy burgers, crispy fries & more, served fresh in Newport News since 1972.">
-  <meta name="keywords" content="Gus's Hot Dog King, Newport News hot dogs, Virginia fast food, best burgers Newport News, chili dogs Newport News, family diner Virginia, local restaurant Newport News, hot dog menu, fries and burgers Newport News, classic American lunch, family-owned restaurant, lunch specials Newport News, Gus's Hot Dog King menu, takeout Newport News, best hot dogs Virginia">
-  <title>Menu | Gus's Hot Dog King - Hot Dogs, Burgers & More in Newport News, VA</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-  <script src="navigation.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <!-- Custom Fonts -->
-  <style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-    }
-    h1, h2, h3 {
-      font-family: 'Lobster', cursive;
-    }
-  </style>
-</head>
-<body class="flex flex-col min-h-screen bg-gray-50 text-gray-900">
-  <header class="w-full bg-white border-none py-4 px-4 flex items-center justify-between" role="banner">
-  <!-- Skip to Content -->
-  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-purple-900 focus:text-white focus:p-2 focus:rounded">Skip to main content</a>
-
-  <!-- Logo / Title -->
-  <div class="flex items-center gap-4">
-    <img src="public/images/HDK_LOGO.webp" alt="Gus's Hot Dog King logo" class="w-24 h-24 sm:w-32 sm:h-32 object-contain" />
-    <h1 class="text-2xl sm:text-4xl font-bold text-purple-900">Gus's Hot Dog King</h1>
-  </div>
-
-  <!-- Mobile Menu Button -->
-  <button id="toggleSidebar" aria-label="Open Menu" aria-controls="sidebar" aria-expanded="false"
-          class="p-2 bg-purple-900 text-white rounded focus:outline-none focus:ring-2 focus:ring-yellow-400 sm:hidden">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-    </svg>
-  </button>
-
-  <!-- Placeholder for nav -->
-  <div id="navSidebar"></div>
-</header>
-
-  <!-- Main -->
-  <main class="flex-grow">
-    <section>
-		<p class="mt-4 text-lg">
-			Welcome to Gus’s Hot Dog King! Since 1972, we’ve served the best hot dogs, juicy burgers, crispy fries, and classic American lunch specials in Newport News, Virginia. Check out our full menu of family favorites and fast-food classics.
-		</p>
-		<div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 my-6 rounded-lg shadow-md text-center">
-			<h2 class="text-xl font-bold text-purple-900 mb-2">Craving Gus’s?</h2>
-				<p class="text-gray-800 mb-4">
-					Call <a href="tel:7575951630" class="text-purple-700 font-semibold hover:underline">757-595-1630</a> to order to go, stop by and enjoy your meal with us, or get your favorites delivered fast with DoorDash.
-				</p>
-		<div class="flex justify-center">
-			<a
-				href="https://www.doordash.com/store/gus's-hot-dog-king-newport-news-926834/18420549/?event_type=autocomplete&pickup=false"
-				target="_blank"
-				class="inline-block bg-gray-800 text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-gray-900 transition duration-300"
-			>
-				Order Now on DoorDash
-			</a>
-		</div>
-	</div>
-
-	</section>
-    <section class="max-w-screen-lg mx-auto px-4 py-10">
-      <h1 class="text-3xl font-extrabold text-center mb-8">Our Menu</h1>
-      <div id="menu-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Menu items injected here -->
-      </div>
-    </section>
-    <!-- Menu Carousel Section -->
-<section class="py-16 bg-gray-50">
-  <div class="max-w-screen-xl mx-auto px-4 text-center">
-    <h2 class="text-4xl font-bold text-gray-800 mb-8">Our Delicious Menu</h2>
-    <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
-      Take a look at some of our favorite items. Each dish is made with love and packed with flavor!
-    </p>
-
-    <!-- Carousel Container -->
-    <div class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-2xl shadow-lg">
-      <!-- Slides -->
-      <div class="carousel-slides flex transition-transform duration-500">
-        <img src="public/images/bbq_cheese_fries.jpg" alt="bbq_cheese_fries" class="w-full flex-shrink-0 object-cover h-80">
-        <img src="public/images/footlong_onion_rings.jpg" alt="footlong_onion_rings" class="w-full flex-shrink-0 object-cover h-80">
-        <img src="public/images/funnel_fries.jpg" alt="funnel_fries" class="w-full flex-shrink-0 object-cover h-80">
-        <img src="public/images/chili_cheese_fries.jpg" alt="chili_cheese_fries" class="w-full flex-shrink-0 object-cover h-80">
-      </div>
-
-      <!-- Previous Button -->
-      <button class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75" id="prev">
-        &#10094;
-      </button>
-
-      <!-- Next Button -->
-      <button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75" id="next">
-        &#10095;
-      </button>
-    </div>
-  </div>
-</section>
-  </main>
-
-<footer class="bg-yellow-100 border-t border-yellow-300 text-brown-800 text-sm">
-  <div class="max-w-screen-xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
-
-    <!-- Left: Address and Phone -->
-    <div class="text-center sm:text-left space-y-1">
-      <div class="flex items-center justify-center sm:justify-start gap-2">
-        <svg class="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M10 2a6 6 0 00-6 6c0 4.05 6 10 6 10s6-5.95 6-10a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z"/>
-        </svg>
-        <span>10725 Jefferson Ave, Newport News, VA 23601</span>
-      </div>
-      <div class="flex items-center justify-center sm:justify-start gap-2">
-        <svg class="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M2.003 5.884l3.91-1.955a1 1 0 011.09.217l2.1 2.1a1 1 0 01.217 1.09l-1.955 3.91a11.003 11.003 0 005.516 5.516l3.91-1.955a1 1 0 011.09.217l2.1 2.1a1 1 0 01.217 1.09l-1.955 3.91a1 1 0 01-.942.548C8.01 20 0 11.99 0 2.998a1 1 0 01.548-.942z"/>
-        </svg>
-        <a href="tel:7575951630" class="hover:underline">(757) 595-1630</a>
-      </div>
-    </div>
-
-    <!-- Right: Facebook Link -->
-    <div class="mt-4 sm:mt-0 flex items-center gap-2">
-      <a href="https://www.facebook.com/Gusshotdogking" target="_blank" class="flex items-center gap-1 hover:text-red-700">
-        <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M22 12c0-5.522-4.478-10-10-10S2 6.478 2 12a9.998 9.998 0 008.187 9.8v-6.93h-2.46v-2.87h2.46V9.845c0-2.438 1.457-3.79 3.686-3.79 1.068 0 2.185.19 2.185.19v2.4h-1.232c-1.215 0-1.593.754-1.593 1.528v1.838h2.713l-.433 2.87h-2.28v6.93A9.998 9.998 0 0022 12z"/>
-        </svg>
-        <span>Follow us on Facebook</span>
-      </a>
-    </div>
-
-  </div>
-
-  <!-- Map Section -->
-<div class="mx-auto px-4 py-4 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
-  <div class="relative w-full" style="padding-top: 100%;"> <!-- Square aspect ratio -->
-    <iframe
-      title="Gus's Hot Dog King Location"
-      src="https://www.google.com/maps?q=Gus's+Hot+Dog+King,+Newport+News,+VA&output=embed"
-      class="absolute top-0 left-0 w-full h-full rounded-lg shadow-md"
-      style="border:0;"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </div>
-</div>
-   <!-- Copyright -->
-  <div class="bg-yellow-200 text-center text-xs text-brown-700 py-2 border-t border-yellow-300">
-    © 2025 Gus's Hot Dog King. All rights reserved. Serving Great Hotdogs Since 1972. 
-  </div>
-</footer>
-
-
-  <!-- All JavaScript in the same file -->
-  <script>
-    // Load nav sidebar
-  fetch('nav-sidebar.html')
-    .then(res => res.text())
-    .then(html => {
-      const navSidebar = document.getElementById('navSidebar');
-      if (navSidebar) {
-        navSidebar.innerHTML = html;
-
-        const toggleButton = document.getElementById("toggleSidebar");
-        const sidebar = document.getElementById("sidebar");
-
-        toggleButton?.addEventListener("click", (e) => {
-          e.stopPropagation();
-          sidebar.classList.toggle("-translate-x-full");
-        });
-
-        document.addEventListener("click", (e) => {
-          const clickedInsideSidebar = sidebar?.contains(e.target);
-          const clickedToggle = toggleButton?.contains(e.target);
-          const sidebarVisible = !sidebar?.classList.contains("-translate-x-full");
-
-          if (!clickedInsideSidebar && !clickedToggle && sidebarVisible) {
-            sidebar?.classList.add("-translate-x-full");
-          }
-        });
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore Gus's Hot Dog King's legendary menu—hot dogs, juicy burgers, crispy fries & more, served fresh in Newport News since 1972."
+    />
+    <meta
+      name="keywords"
+      content="Gus's Hot Dog King, Newport News hot dogs, Virginia fast food, best burgers Newport News, chili dogs Newport News, family diner Virginia, local restaurant Newport News, hot dog menu, fries and burgers Newport News, classic American lunch, family-owned restaurant, lunch specials Newport News, Gus's Hot Dog King menu, takeout Newport News, best hot dogs Virginia"
+    />
+    <title>
+      Menu | Gus's Hot Dog King - Hot Dogs, Burgers & More in Newport News, VA
+    </title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="navigation.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom Fonts -->
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
       }
-    })
-    .catch(err => console.error('Error loading nav-sidebar:', err));
+      h1,
+      h2,
+      h3 {
+        font-family: "Lobster", cursive;
+      }
+    </style>
+  </head>
+  <body class="flex flex-col min-h-screen bg-gray-50 text-gray-900">
+    <header
+      class="w-full bg-white border-none py-4 px-4 flex items-center justify-between"
+      role="banner"
+    >
+      <!-- Skip to Content -->
+      <a
+        href="#main-content"
+        class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-purple-900 focus:text-white focus:p-2 focus:rounded"
+        >Skip to main content</a
+      >
 
-    const menuData = [
-      {
-        header: "Kids Items or 1/2 Orders",
-        items: [
-          { name: "Kids Shake", price: "$3.75" },
-          { name: "Wiener", price: "$2.90" },
-          { name: "Wiener w/cheese", price: "$3.30" },
-          { name: "1/2 order fries", price: "$2.25" },
-          { name: "1/2 order fries w/cheese", price: "$3.00" },
-          { name: "1/2 order fries w/chili", price: "$3.50" },
-          { name: "1/2 order onion rings", price: "$3.50" },
-          { name: "1/2 order onion rings w/cheese", price: "$4.00" },
-        ],
-      },
-      {
-        header: "Side Items",
-        items: [
-          { name: "French Fries", price: "$2.85" },
-          { name: "French Fries w/cheese", price: "$4.45" },
-          { name: "French Fries w/chili", price: "$4.40" },
-          { name: "French Fries w/chili and cheese", price: "$5.50" },
-          { name: "Onion Rings", price: "$4.95" },
-          { name: "Chips", price: "$1.95" },
-        ],
-      },
-      {
-        header: "Dogs",
-        items: [
-          { name: "Hot Dog", price: "$2.95" },
-          { name: "Hot Dog w/cheese", price: "$3.35" },
-          { name: "FootLong", price: "$5.90" },
-          { name: "FootLong w/cheese", price: "$6.70" },
-          { name: "Beer Bratwurst", price: "$4.95" },
-          { name: "Beer Bratwurst w/cheese", price: "$5.55" },
-          { name: "Corn Dog", price: "$3.95" },
-        ],
-      },
-      {
-        header: "Burgers and Sandwiches",
-        items: [
-          { name: "Burger", price: "$4.95" },
-          { name: "Cheese burger", price: "$5.70" },
-          { name: "BBQ Sandwich small", price: "$4.95" },
-		  { name: "BBQ Sandwich large", price: "$6.95"},
-          { name: "BBQ Sandwich w/cheese small", price: "$5.50" },
-		  { name: "BBQ Sandwich w/cheese large", price: "$7.45"},
-          { name: "BBQ Platter", price: "$10.50" },
-          { name: "BBQ Platter w/cheese", price: "$11.25" },
-          { name: "Chicken Sandwich", price: "$6.00" },
-          { name: "Chicken Sandwich w/cheese", price: "$6.75" },
-        ],
-      },
-      {
-        header: "Sweets",
-        items: [
-          { name: "Funnel Cake Fries", price: "$2.95" },
-          { name: "Funnel Cake Fries w/chocolate", price: "$3.50" },
-          { name: "Homemade Banana Pudding", price: "$3.50" },
-          { name: "Milk Shake kids", price: "$3.75" },
-		  { name: "Milk Shake med", price: "$4.50"},
-		  { name: "Milk Shake large", price: "$5.25"},
-        ],
-      },
-      {
-        header: "Drinks (no free refills on sodas)",
-        items: [
-          { name: "Pepsi Products sm", price: "$1.90" },
-		  { name: "Pepsi Products med", price: "$ 2.50"},
-		  { name: "Pepsi Products large", price: "$2.75"},
-		  { name: "Pepsi Products xlarge", price: "$3.25"},
-          { name: "Iced Tea", price: "$2.75" },
-          { name: "Bottled Water", price: "$2.75" },
-          { name: "Coffee", price: "$2.50" },
-        ],
-      },
-    ];
+      <!-- Logo / Title -->
+      <div class="flex items-center gap-4">
+        <img
+          src="public/images/HDK_LOGO.webp"
+          alt="Gus's Hot Dog King logo"
+          class="w-24 h-24 sm:w-32 sm:h-32 object-contain"
+        />
+        <h1 class="text-2xl sm:text-4xl font-bold text-purple-900">
+          Gus's Hot Dog King
+        </h1>
+      </div>
 
-    // Render menu on page load
-    document.addEventListener("DOMContentLoaded", () => {
-      const container = document.getElementById("menu-container");
+      <!-- Mobile Menu Button -->
+      <button
+        id="toggleSidebar"
+        aria-label="Open Menu"
+        aria-controls="sidebar"
+        aria-expanded="false"
+        class="p-2 bg-purple-900 text-white rounded focus:outline-none focus:ring-2 focus:ring-yellow-400 sm:hidden"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-8 w-8"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
 
-      menuData.forEach(section => {
-        const sectionDiv = document.createElement("div");
-        sectionDiv.className = "bg-white rounded-lg shadow p-6";
+      <!-- Placeholder for nav -->
+      <div id="navSidebar"></div>
+    </header>
 
-        const header = document.createElement("h2");
-        header.className = "text-xl font-bold mb-4 text-indigo-700 border-b pb-2";
-        header.textContent = section.header;
-        sectionDiv.appendChild(header);
+    <!-- Main -->
+    <main class="flex-grow">
+      <section>
+        <p class="mt-4 text-lg">
+          Welcome to Gus’s Hot Dog King! Since 1972, we’ve served the best hot
+          dogs, juicy burgers, crispy fries, and classic American lunch specials
+          in Newport News, Virginia. Check out our full menu of family favorites
+          and fast-food classics.
+        </p>
+        <div
+          class="bg-yellow-100 border-l-4 border-yellow-500 p-4 my-6 rounded-lg shadow-md text-center"
+        >
+          <h2 class="text-xl font-bold text-purple-900 mb-2">Craving Gus’s?</h2>
+          <p class="text-gray-800 mb-4">
+            Call
+            <a
+              href="tel:7575951630"
+              class="text-purple-700 font-semibold hover:underline"
+              >757-595-1630</a
+            >
+            to order to go, stop by and enjoy your meal with us, or get your
+            favorites delivered fast with DoorDash.
+          </p>
+          <div class="flex justify-center">
+            <a
+              href="https://www.doordash.com/store/gus's-hot-dog-king-newport-news-926834/18420549/?event_type=autocomplete&pickup=false"
+              target="_blank"
+              class="inline-block bg-gray-800 text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-gray-900 transition duration-300"
+            >
+              Order Now on DoorDash
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-screen-lg mx-auto px-4 py-10">
+        <h1 class="text-3xl font-extrabold text-center mb-8">Our Menu</h1>
+        <div
+          id="menu-container"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          <!-- Menu items injected here -->
+        </div>
+      </section>
+      <!-- Menu Carousel Section -->
+      <section class="py-16 bg-gray-50">
+        <div class="max-w-screen-xl mx-auto px-4 text-center">
+          <h2 class="text-4xl font-bold text-gray-800 mb-8">
+            Our Delicious Menu
+          </h2>
+          <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+            Take a look at some of our favorite items. Each dish is made with
+            love and packed with flavor!
+          </p>
 
-        const list = document.createElement("ul");
-        list.className = "space-y-2";
+          <!-- Carousel Container -->
+          <div
+            class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-2xl shadow-lg"
+          >
+            <!-- Slides -->
+            <div class="carousel-slides flex transition-transform duration-500">
+              <div class="w-full flex-shrink-0 aspect-video">
+                <img
+                  src="public/images/bbq_cheese_fries.jpg"
+                  alt="BBQ Cheese Fries"
+                  class="w-full h-full object-cover rounded-xl"
+                />
+              </div>
+              <div class="w-full flex-shrink-0 aspect-video">
+                <img
+                  src="public/images/footlong_onion_rings.jpg"
+                  alt="Footlong with Onion Rings"
+                  class="w-full h-full object-cover rounded-xl"
+                />
+              </div>
+              <div class="w-full flex-shrink-0 aspect-video">
+                <img
+                  src="public/images/funnel_fries.jpg"
+                  alt="Funnel Fries"
+                  class="w-full h-full object-cover rounded-xl"
+                />
+              </div>
+              <div class="w-full flex-shrink-0 aspect-video">
+                <img
+                  src="public/images/chili_cheese_fries.jpg"
+                  alt="Chili Cheese Fries"
+                  class="w-full h-full object-cover rounded-xl"
+                />
+              </div>
+            </div>
 
-        section.items.forEach(item => {
-          const itemEl = document.createElement("li");
-          itemEl.className = "flex justify-between text-gray-800";
+            <!-- Previous Button -->
+            <button
+              class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
+              id="prev"
+            >
+              &#10094;
+            </button>
 
-          const name = document.createElement("span");
-          name.textContent = item.name;
+            <!-- Next Button -->
+            <button
+              class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
+              id="next"
+            >
+              &#10095;
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
 
-          const price = document.createElement("span");
-          price.className = "font-semibold text-indigo-600";
-          price.textContent = item.price;
+    <footer
+      class="bg-yellow-100 border-t border-yellow-300 text-brown-800 text-sm"
+    >
+      <div
+        class="max-w-screen-xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center"
+      >
+        <!-- Left: Address and Phone -->
+        <div class="text-center sm:text-left space-y-1">
+          <div class="flex items-center justify-center sm:justify-start gap-2">
+            <svg
+              class="w-4 h-4 text-red-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 2a6 6 0 00-6 6c0 4.05 6 10 6 10s6-5.95 6-10a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z"
+              />
+            </svg>
+            <span>10725 Jefferson Ave, Newport News, VA 23601</span>
+          </div>
+          <div class="flex items-center justify-center sm:justify-start gap-2">
+            <svg
+              class="w-4 h-4 text-red-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M2.003 5.884l3.91-1.955a1 1 0 011.09.217l2.1 2.1a1 1 0 01.217 1.09l-1.955 3.91a11.003 11.003 0 005.516 5.516l3.91-1.955a1 1 0 011.09.217l2.1 2.1a1 1 0 01.217 1.09l-1.955 3.91a1 1 0 01-.942.548C8.01 20 0 11.99 0 2.998a1 1 0 01.548-.942z"
+              />
+            </svg>
+            <a href="tel:7575951630" class="hover:underline">(757) 595-1630</a>
+          </div>
+        </div>
 
-          itemEl.appendChild(name);
-          itemEl.appendChild(price);
-          list.appendChild(itemEl);
+        <!-- Right: Facebook Link -->
+        <div class="mt-4 sm:mt-0 flex items-center gap-2">
+          <a
+            href="https://www.facebook.com/Gusshotdogking"
+            target="_blank"
+            class="flex items-center gap-1 hover:text-red-700"
+          >
+            <svg
+              class="w-5 h-5 text-blue-600"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M22 12c0-5.522-4.478-10-10-10S2 6.478 2 12a9.998 9.998 0 008.187 9.8v-6.93h-2.46v-2.87h2.46V9.845c0-2.438 1.457-3.79 3.686-3.79 1.068 0 2.185.19 2.185.19v2.4h-1.232c-1.215 0-1.593.754-1.593 1.528v1.838h2.713l-.433 2.87h-2.28v6.93A9.998 9.998 0 0022 12z"
+              />
+            </svg>
+            <span>Follow us on Facebook</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Map Section -->
+      <div
+        class="mx-auto px-4 py-4 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl"
+      >
+        <div class="relative w-full" style="padding-top: 100%">
+          <!-- Square aspect ratio -->
+          <iframe
+            title="Gus's Hot Dog King Location"
+            src="https://www.google.com/maps?q=Gus's+Hot+Dog+King,+Newport+News,+VA&output=embed"
+            class="absolute top-0 left-0 w-full h-full rounded-lg shadow-md"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div
+        class="bg-yellow-200 text-center text-xs text-brown-700 py-2 border-t border-yellow-300"
+      >
+        © 2025 Gus's Hot Dog King. All rights reserved. Serving Great Hotdogs
+        Since 1972.
+      </div>
+    </footer>
+
+    <!-- All JavaScript in the same file -->
+    <script>
+      // Load nav sidebar
+      fetch("nav-sidebar.html")
+        .then((res) => res.text())
+        .then((html) => {
+          const navSidebar = document.getElementById("navSidebar");
+          if (navSidebar) {
+            navSidebar.innerHTML = html;
+
+            const toggleButton = document.getElementById("toggleSidebar");
+            const sidebar = document.getElementById("sidebar");
+
+            toggleButton?.addEventListener("click", (e) => {
+              e.stopPropagation();
+              sidebar.classList.toggle("-translate-x-full");
+            });
+
+            document.addEventListener("click", (e) => {
+              const clickedInsideSidebar = sidebar?.contains(e.target);
+              const clickedToggle = toggleButton?.contains(e.target);
+              const sidebarVisible =
+                !sidebar?.classList.contains("-translate-x-full");
+
+              if (!clickedInsideSidebar && !clickedToggle && sidebarVisible) {
+                sidebar?.classList.add("-translate-x-full");
+              }
+            });
+          }
+        })
+        .catch((err) => console.error("Error loading nav-sidebar:", err));
+
+      const menuData = [
+        {
+          header: "Kids Items or 1/2 Orders",
+          items: [
+            { name: "Kids Shake", price: "$3.75" },
+            { name: "Wiener", price: "$2.90" },
+            { name: "Wiener w/cheese", price: "$3.30" },
+            { name: "1/2 order fries", price: "$2.25" },
+            { name: "1/2 order fries w/cheese", price: "$3.00" },
+            { name: "1/2 order fries w/chili", price: "$3.50" },
+            { name: "1/2 order onion rings", price: "$3.50" },
+            { name: "1/2 order onion rings w/cheese", price: "$4.00" },
+          ],
+        },
+        {
+          header: "Side Items",
+          items: [
+            { name: "French Fries", price: "$2.85" },
+            { name: "French Fries w/cheese", price: "$4.45" },
+            { name: "French Fries w/chili", price: "$4.40" },
+            { name: "French Fries w/chili and cheese", price: "$5.50" },
+            { name: "Onion Rings", price: "$4.95" },
+            { name: "Chips", price: "$1.95" },
+          ],
+        },
+        {
+          header: "Dogs",
+          items: [
+            { name: "Hot Dog", price: "$2.95" },
+            { name: "Hot Dog w/cheese", price: "$3.35" },
+            { name: "FootLong", price: "$5.90" },
+            { name: "FootLong w/cheese", price: "$6.70" },
+            { name: "Beer Bratwurst", price: "$4.95" },
+            { name: "Beer Bratwurst w/cheese", price: "$5.55" },
+            { name: "Corn Dog", price: "$3.95" },
+          ],
+        },
+        {
+          header: "Burgers and Sandwiches",
+          items: [
+            { name: "Burger", price: "$4.95" },
+            { name: "Cheese burger", price: "$5.70" },
+            { name: "BBQ Sandwich small", price: "$4.95" },
+            { name: "BBQ Sandwich large", price: "$6.95" },
+            { name: "BBQ Sandwich w/cheese small", price: "$5.50" },
+            { name: "BBQ Sandwich w/cheese large", price: "$7.45" },
+            { name: "BBQ Platter", price: "$10.50" },
+            { name: "BBQ Platter w/cheese", price: "$11.25" },
+            { name: "Chicken Sandwich", price: "$6.00" },
+            { name: "Chicken Sandwich w/cheese", price: "$6.75" },
+          ],
+        },
+        {
+          header: "Sweets",
+          items: [
+            { name: "Funnel Cake Fries", price: "$2.95" },
+            { name: "Funnel Cake Fries w/chocolate", price: "$3.50" },
+            { name: "Homemade Banana Pudding", price: "$3.50" },
+            { name: "Milk Shake kids", price: "$3.75" },
+            { name: "Milk Shake med", price: "$4.50" },
+            { name: "Milk Shake large", price: "$5.25" },
+          ],
+        },
+        {
+          header: "Drinks (no free refills on sodas)",
+          items: [
+            { name: "Pepsi Products sm", price: "$1.90" },
+            { name: "Pepsi Products med", price: "$ 2.50" },
+            { name: "Pepsi Products large", price: "$2.75" },
+            { name: "Pepsi Products xlarge", price: "$3.25" },
+            { name: "Iced Tea", price: "$2.75" },
+            { name: "Bottled Water", price: "$2.75" },
+            { name: "Coffee", price: "$2.50" },
+          ],
+        },
+      ];
+
+      // Render menu on page load
+      document.addEventListener("DOMContentLoaded", () => {
+        const container = document.getElementById("menu-container");
+
+        menuData.forEach((section) => {
+          const sectionDiv = document.createElement("div");
+          sectionDiv.className = "bg-white rounded-lg shadow p-6";
+
+          const header = document.createElement("h2");
+          header.className =
+            "text-xl font-bold mb-4 text-indigo-700 border-b pb-2";
+          header.textContent = section.header;
+          sectionDiv.appendChild(header);
+
+          const list = document.createElement("ul");
+          list.className = "space-y-2";
+
+          section.items.forEach((item) => {
+            const itemEl = document.createElement("li");
+            itemEl.className = "flex justify-between text-gray-800";
+
+            const name = document.createElement("span");
+            name.textContent = item.name;
+
+            const price = document.createElement("span");
+            price.className = "font-semibold text-indigo-600";
+            price.textContent = item.price;
+
+            itemEl.appendChild(name);
+            itemEl.appendChild(price);
+            list.appendChild(itemEl);
+          });
+
+          sectionDiv.appendChild(list);
+          container.appendChild(sectionDiv);
         });
-
-        sectionDiv.appendChild(list);
-        container.appendChild(sectionDiv);
       });
-    });
-const slides = document.querySelector('.carousel-slides');
-  const images = document.querySelectorAll('.carousel-slides img');
-  const prevBtn = document.getElementById('prev');
-  const nextBtn = document.getElementById('next');
-  let index = 0;
+      const slides = document.querySelector(".carousel-slides");
+      const images = document.querySelectorAll(".carousel-slides img");
+      const prevBtn = document.getElementById("prev");
+      const nextBtn = document.getElementById("next");
+      let index = 0;
 
-  function showSlide(i) {
-    if(i < 0) index = images.length - 1;
-    else if(i >= images.length) index = 0;
-    else index = i;
-    slides.style.transform = `translateX(-${index * 100}%)`;
-  }
+      function showSlide(i) {
+        if (i < 0) index = images.length - 1;
+        else if (i >= images.length) index = 0;
+        else index = i;
+        slides.style.transform = `translateX(-${index * 100}%)`;
+      }
 
-  prevBtn.addEventListener('click', () => showSlide(index - 1));
-  nextBtn.addEventListener('click', () => showSlide(index + 1));
+      prevBtn.addEventListener("click", () => showSlide(index - 1));
+      nextBtn.addEventListener("click", () => showSlide(index + 1));
 
-  // Optional: Auto slide every 5 seconds
-  setInterval(() => showSlide(index + 1), 5000);
-    
-  </script>
-</body>
+      // Optional: Auto slide every 5 seconds
+      setInterval(() => showSlide(index + 1), 5000);
+    </script>
+  </body>
 </html>
-
-
