@@ -44,6 +44,15 @@
     }
   </style>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8X7CZDXQSP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8X7CZDXQSP');
+</script>
 <body class="bg-white text-gray-800">
   <!-- Facebook SDK -->
 <div id="fb-root"></div>
@@ -85,10 +94,29 @@
       </p>
     </section>
 
-    <section class="bg-gray-100 py-16 text-center">
-      <img src="public/images/gus_making_dog.webp" alt="Gus making a famous all the way hot dog at Gus's Hot Dog King in Newport News" class="mx-auto w-52 h-52 rounded-full border-4 border-yellow-500 object-cover mb-6" loading="lazy" />
-      <h2 class="text-4xl font-bold">Welcome to Gus's Hot Dog King</h2>
-      <p class="text-xl mt-4 mb-8">Experience Great Customer Service and Great Hotdogs</p>
+    <section class="bg-gray-100 py-16 text-center px-6">
+  <img
+    src="public/images/gus_making_dog.webp"
+    alt="Gus making a famous all the way hot dog at Gus's Hot Dog King in Newport News"
+    class="mx-auto w-52 h-52 rounded-full border-4 border-yellow-500 object-cover mb-6"
+    loading="lazy"
+  />
+  
+  <h2 class="text-4xl font-bold text-gray-900">Welcome to Gus's Hot Dog King</h2>
+  <p class="text-xl mt-4 mb-8 text-gray-700">Experience The Royal Treatment With The King</p>
+
+  <div class="max-w-2xl mx-auto bg-white border-l-4 border-red-600 rounded-2xl shadow-md p-6">
+    <p class="text-lg md:text-xl leading-relaxed text-red-700 font-medium">
+      🍂 Please note that <strong>Gus’s Hot Dog King</strong> will be 
+      <span class="font-semibold">closed on Thursday, November 27, 2025</span> in observance of Thanksgiving.  
+      We will resume our regular business hours on Friday.  
+    </p>
+    <p class="text-lg md:text-xl leading-relaxed text-red-700 mt-4 font-medium">
+      We appreciate your understanding and wish you and your loved ones a <strong>thankful and happy Thanksgiving!</strong> 🦃
+    </p>
+  </div>
+</section>
+
       <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow">
         <h2 class="text-2xl font-semibold mb-4 flex items-center justify-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -121,6 +149,123 @@
     <span>View Our Menu</span>
   </a>
 </section>
+<!-- Fan Favorites Carousel Section -->
+<section class="bg-gray-100 py-16">
+  <div class="max-w-screen-xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center text-purple-900 mb-10">
+      Fan Favorites
+    </h2>
+
+    <!-- Carousel Container -->
+    <div class="relative overflow-hidden">
+      <div
+        id="carousel"
+        class="flex transition-transform duration-700 ease-in-out"
+        style="transform: translateX(0%);"
+      >
+        <!-- Slide 1 -->
+        <div class="flex-none w-full md:w-1/3 px-4 text-center">
+          <img
+            src="public/images/dog_w_pickles.jpg"
+            alt="Hot dog with pickles"
+            class="w-full h-80 object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
+          />
+          <p class="mt-4 text-xl font-semibold text-yellow-800">
+            Classic Hot Dog With Pickles
+          </p>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="flex-none w-full md:w-1/3 px-4 text-center">
+          <img
+            src="public/images/brat.jpg"
+            alt="Bratwurst"
+            class="w-full h-80 object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
+          />
+          <p class="mt-4 text-xl font-semibold text-yellow-800">
+            Beer Bratwurst
+          </p>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="flex-none w-full md:w-1/3 px-4 text-center">
+          <img
+            src="public/images/hot_chocloate.jpg"
+            alt="Hot Chocolate"
+            class="w-full h-80 object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
+          />
+          <p class="mt-4 text-xl font-semibold text-yellow-800">
+            Mug of Hot Chocolate 
+          </p>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="flex-none w-full md:w-1/3 px-4 text-center">
+          <img
+            src="public/images/loaded_hot_dog.webp"
+            alt="Loaded Hot Dog"
+            class="w-full h-80 object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
+          />
+          <p class="mt-4 text-xl font-semibold text-yellow-800">
+            Loaded Hot Dog
+          </p>
+        </div>
+        <!-- Slide 5 -->
+        <div class="flex-none w-full md:w-1/3 px-4 text-center">
+          <img
+            src="public/images/banana_pudding.webp"
+            alt="Banana Pudding "
+            class="w-full h-80 object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
+          />
+          <p class="mt-4 text-xl font-semibold text-yellow-800">
+            Banana Pudding  
+          </p>
+        </div>
+        <!-- Slide 6 -->
+        <div class="flex-none w-full md:w-1/3 px-4 text-center">
+          <img
+            src="public/images/funnel_fries.jpg"
+            alt="Funnel Fries"
+            class="w-full h-80 object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
+          />
+          <p class="mt-4 text-xl font-semibold text-yellow-800">
+            Funnel Fries 
+          </p>
+        </div>
+         <!-- Slide 7 -->
+        <div class="flex-none w-full md:w-1/3 px-4 text-center">
+          <img
+            src="public/images/dog_w_sour.jpg"
+            alt="Hot Dog With Sauerkraut"
+            class="w-full h-80 object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
+          />
+          <p class="mt-4 text-xl font-semibold text-yellow-800">
+            Hot Dog With Sauerkraut
+          </p>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button
+        id="prevBtn"
+        class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-purple-900 text-white p-3 rounded-full hover:bg-purple-700 focus:outline-none"
+      >
+        &#10094;
+      </button>
+      <button
+        id="nextBtn"
+        class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-purple-900 text-white p-3 rounded-full hover:bg-purple-700 focus:outline-none"
+      >
+        &#10095;
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+  
+
 
 
     <section class="bg-yellow-100 py-10 px-6 text-center rounded-2xl shadow-lg max-w-4xl mx-auto mt-10">
@@ -591,6 +736,87 @@ function initReviewsCarousel() {
   // Initialize first slide
   goToSlide(0);
 }
+
+  const carousel = document.getElementById("carousel");
+  const slides = carousel.children;
+  const totalSlides = slides.length;
+  let index = 1; // start from the first "real" slide
+  let autoSlideInterval;
+
+  // Clone first and last slides for seamless looping
+  const firstClone = slides[0].cloneNode(true);
+  const lastClone = slides[totalSlides - 1].cloneNode(true);
+
+  carousel.appendChild(firstClone);
+  carousel.insertBefore(lastClone, slides[0]);
+
+  // Update total slides after cloning
+  const newTotal = carousel.children.length;
+
+  // Start position at first "real" slide
+  carousel.style.transform = `translateX(-${index * 100}%)`;
+
+  function moveToSlide() {
+    carousel.style.transition = "transform 0.6s ease-in-out";
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() {
+    index++;
+    moveToSlide();
+  }
+
+  function prevSlide() {
+    index--;
+    moveToSlide();
+  }
+
+  function startAutoSlide() {
+    autoSlideInterval = setInterval(() => {
+      nextSlide();
+    }, 3000);
+  }
+
+  function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+  }
+
+  // Reset transition at edges for smooth looping
+  carousel.addEventListener("transitionend", () => {
+    if (index === newTotal - 1) {
+      // Reached cloned first slide
+      carousel.style.transition = "none";
+      index = 1; // Jump to real first
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+    } else if (index === 0) {
+      // Reached cloned last slide
+      carousel.style.transition = "none";
+      index = newTotal - 2; // Jump to real last
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+    }
+  });
+
+  // Button controls
+  document.getElementById("nextBtn").addEventListener("click", () => {
+    stopAutoSlide();
+    nextSlide();
+    startAutoSlide();
+  });
+
+  document.getElementById("prevBtn").addEventListener("click", () => {
+    stopAutoSlide();
+    prevSlide();
+    startAutoSlide();
+  });
+
+  // Pause on hover/focus for accessibility
+  carousel.addEventListener("mouseenter", stopAutoSlide);
+  carousel.addEventListener("mouseleave", startAutoSlide);
+
+  // Start the loop
+  startAutoSlide();
+
+
 </script>
 
   
