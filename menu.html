@@ -206,43 +206,58 @@
         </div>
       </section>
     </main>
-
-    <!-- Footer -->
-    <footer
-      class="bg-yellow-100 border-t border-yellow-300 text-brown-800 text-sm"
-      id="location"
-    >
-      <div
-        class="max-w-screen-xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center"
-      >
-        <div class="text-center sm:text-left space-y-1">
-          <div class="flex items-center justify-center sm:justify-start gap-2">
-            <svg
-              class="w-4 h-4 text-red-600"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M10 2a6 6 0 00-6 6c0 4.05 6 10 6 10s6-5.95 6-10a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z"
-              />
-            </svg>
-            <span>10725 Jefferson Ave, Newport News, VA 23601</span>
-          </div>
-          <div class="flex items-center justify-center sm:justify-start gap-2">
-            <svg
-              class="w-4 h-4 text-red-600"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M2.003 5.884l3.91-1.955a1 1 0 011.09.217l2.1 2.1a1 1 0 01.217 1.09l-1.955 3.91a11.003 11.003 0 005.516 5.516l3.91-1.955a1 1 0 011.09.217l2.1 2.1a1 1 0 01.217 1.09l-1.955 3.91a1 1 0 01-.942.548C8.01 20 0 11.99 0 2.998a1 1 0 01.548-.942z"
-              />
-            </svg>
-            <a href="tel:7575951630" class="hover:underline">(757) 595-1630</a>
-          </div>
-        </div>
+<footer
+  class="bg-yellow-100 border-t border-yellow-300 text-sm"
+  id="location"
+>
+  <!-- Top content -->
+  <div
+    class="max-w-screen-xl mx-auto px-4 py-6 flex flex-col sm:flex-row justify-between gap-6"
+  >
+    <!-- Address -->
+    <div class="text-center sm:text-left space-y-2">
+      <div class="flex items-center justify-center sm:justify-start gap-2">
+        <svg class="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+          <path
+            d="M10 2a6 6 0 00-6 6c0 4.05 6 10 6 10s6-5.95 6-10a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z"
+          />
+        </svg>
+        <span>10725 Jefferson Ave, Newport News, VA 23601</span>
       </div>
-    </footer>
+
+      <div class="flex items-center justify-center sm:justify-start gap-2">
+        <svg class="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+          <path
+            d="M2.003 5.884l3.91-1.955a1 1 0 011.09.217l2.1 2.1a1 1 0 01.217 1.09l-1.955 3.91a11.003 11.003 0 005.516 5.516l3.91-1.955a1 1 0 011.09.217l2.1 2.1a1 1 0 01.217 1.09l-1.955 3.91a1 1 0 01-.942.548C8.01 20 0 11.99 0 2.998a1 1 0 01.548-.942z"
+          />
+        </svg>
+        <a href="tel:7575951630" class="hover:underline">(757) 595-1630</a>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div class="w-full sm:w-[350px] md:w-[400px] flex-shrink-0">
+      <div class="relative w-full aspect-square">
+        <iframe
+          title="Gus's Hot Dog King Location"
+          src="https://www.google.com/maps?q=Gus's+Hot+Dog+King,+Newport+News,+VA&output=embed"
+          class="absolute inset-0 w-full h-full rounded-lg shadow-md"
+          style="border:0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div
+    class="bg-yellow-200 text-center text-xs py-2 border-t border-yellow-300"
+  >
+    © 2026 Gus's Hot Dog King. All rights reserved. Serving Great Hotdogs Since
+    1972.
+  </div>
+</footer>
 
     <!-- Scripts -->
     <script>

@@ -120,16 +120,6 @@
   <h2 class="text-4xl font-bold text-gray-900">Welcome to Gus's Hot Dog King</h2>
   <p class="text-xl mt-4 mb-8 text-gray-700">Experience The Royal Treatment With The King</p>
 
-  <div class="max-w-2xl mx-auto bg-white border-l-4 border-red-600 rounded-2xl shadow-md p-6">
-    <p class="text-lg md:text-xl leading-relaxed text-red-700 font-medium">
-      🍂 Please note that <strong>Gus’s Hot Dog King</strong> will be 
-      <span class="font-semibold">closed on Thursday, November 27, 2025</span> in observance of Thanksgiving.  
-      We will resume our regular business hours on Friday.  
-    </p>
-    <p class="text-lg md:text-xl leading-relaxed text-red-700 mt-4 font-medium">
-      We appreciate your understanding and wish you and your loved ones a <strong>thankful and happy Thanksgiving!</strong> 🦃
-    </p>
-  </div>
 </section>
 
       <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow">
@@ -150,54 +140,7 @@
         </table>
       </div>
     </section>
-<section class="bg-white py-16 px-6">
-  <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-4xl font-bold text-gray-900 mb-4">Watch Our Latest Reels</h2>
-    <p class="text-lg text-gray-700 mb-12">
-      Get a behind-the-scenes look at <strong>Gus’s Hot Dog King</strong>—where every hot dog is made with care and served with a smile!
-    </p>
-
-    <!-- Reels Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <!-- First Reel -->
-      <div class="relative overflow-hidden rounded-2xl shadow-lg border border-gray-300">
-        <div class="fb-video-container">
-          <iframe
-            title="Facebook Reel - Gus’s Hot Dog King Reel 1"
-            src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1707091389928531%2F&show_text=false&t=0"
-            frameborder="0"
-            allowfullscreen="true"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-          ></iframe>
-        </div>
-      </div>
-
-      <!-- Second Reel -->
-      <div class="relative overflow-hidden rounded-2xl shadow-lg border border-gray-300">
-        <div class="fb-video-container">
-          <iframe
-            title="Facebook Reel - Gus’s Hot Dog King Reel 2"
-            src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1920205021887244%2F&show_text=false&t=0"
-            frameborder="0"
-            allowfullscreen="true"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-          ></iframe>
-        </div>
-      </div>
-    </div>
-
-    <p class="text-sm text-gray-500 mt-8">
-      Follow us on
-      <a
-        href="https://www.facebook.com/GussHotDogKing"
-        class="text-blue-600 hover:underline font-semibold focus:outline-none focus:ring-2 focus:ring-blue-400 rounded-md"
-      >
-        Facebook
-      </a>
-      for more reels, specials, and behind-the-scenes fun!
-    </p>
-  </div>
-</section>
+   
    <section class="bg-purple-100 py-10 text-center px-6">
   <h3 class="text-2xl font-bold text-purple-900 mb-4">Dine In or Take Out Today</h3>
   <p class="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
@@ -323,6 +266,13 @@
     </div>
   </div>
 </section>
+
+
+
+  
+
+
+
     <section class="bg-yellow-100 py-10 px-6 text-center rounded-2xl shadow-lg max-w-4xl mx-auto mt-10">
   <h2 class="text-3xl font-bold text-gray-800 mb-4">Craving The King Of Hot Dogs? Get it delivered!</h2>
   <p class="text-lg text-gray-700 mb-6">Order your favorites from Gus's Hot Dog King and have them delivered straight to your door with DoorDash.</p>
@@ -614,6 +564,8 @@
       <span>Located conveniently on Jefferson Avenue in Newport News, Virginia</span>
     </p>
   </div>
+
+
         <!-- Google Maps Embed -->
 <div class="mx-auto px-4 py-4 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
   <div class="relative w-full" style="padding-top: 100%;"> <!-- Square aspect ratio -->
@@ -631,37 +583,33 @@
 </section>
    <!-- Copyright -->
   <div class="bg-yellow-200 text-center text-xs text-brown-700 py-2 border-t border-yellow-300">
-    © 2025 Gus's Hot Dog King. All rights reserved. Serving Great Hotdogs Since 1972. 
+    © 2026 Gus's Hot Dog King. All rights reserved. Serving Great Hotdogs Since 1972. 
   </div>
 </footer>
+
+
+
  <script>
 document.addEventListener('DOMContentLoaded', () => {
-  // =======================
-  // BUSINESS HOURS
-  // =======================
+  // Load business hours
   const hours = [
     { day: "Monday", open: "10:30 AM", close: "6:00 PM" },
     { day: "Tuesday - Saturday", open: "10:30 AM", close: "8:00 PM" },
     { day: "Sunday", open: "Closed", close: "" }
   ];
-
   const hoursTable = document.getElementById("hoursTable");
   if (hoursTable) {
     hours.forEach(hour => {
       const row = document.createElement("tr");
       row.innerHTML = `
         <td class="py-1 font-medium">${hour.day}</td>
-        <td class="py-1">
-          ${hour.open === "Closed" ? '<span class="text-red-600 font-bold">Closed</span>' : `${hour.open} – ${hour.close}`}
-        </td>
+        <td class="py-1">${hour.open === "Closed" ? '<span class="text-red-600 font-bold">Closed</span>' : `${hour.open} – ${hour.close}`}</td>
       `;
       hoursTable.appendChild(row);
     });
   }
 
-  // =======================
-  // SLIDESHOW
-  // =======================
+  // Slideshow logic
   const slideshowImages = [
     "public/images/brats_on_grill.webp",
     "public/images/bbq_sandwich.webp",
@@ -680,141 +628,203 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 2000);
   }
 
-  // =======================
-  // REVIEWS CAROUSEL
-  // =======================
+  // Initialize Reviews Carousel
   initReviewsCarousel();
-
-  function initReviewsCarousel() {
-    const carousel = document.getElementById('reviews-carousel');
-    const prevBtn = document.getElementById('prev-btn');
-    const nextBtn = document.getElementById('next-btn');
-    const dots = document.querySelectorAll('[data-slide]');
-    
-    if (!carousel) return;
-    
-    let currentSlide = 0;
-    const totalSlides = 6;
-    
-    function goToSlide(slideIndex) {
-      if (slideIndex < 0) slideIndex = totalSlides - 1;
-      if (slideIndex >= totalSlides) slideIndex = 0;
-      currentSlide = slideIndex;
-      const translateX = -currentSlide * 100;
-      carousel.style.transform = `translateX(${translateX}%)`;
-      
-      dots.forEach((dot, index) => {
-        dot.classList.toggle('bg-blue-500', index === currentSlide);
-        dot.classList.toggle('bg-gray-300', index !== currentSlide);
-      });
-    }
-
-    if (prevBtn) prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
-    if (nextBtn) nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
-    dots.forEach((dot, index) => dot.addEventListener('click', () => goToSlide(index)));
-
-    let autoPlayInterval = setInterval(() => goToSlide(currentSlide + 1), 5000);
-    carousel.addEventListener('mouseenter', () => clearInterval(autoPlayInterval));
-    carousel.addEventListener('mouseleave', () => autoPlayInterval = setInterval(() => goToSlide(currentSlide + 1), 5000));
-
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowLeft') goToSlide(currentSlide - 1);
-      else if (e.key === 'ArrowRight') goToSlide(currentSlide + 1);
-    });
-
-    let startX = 0;
-    carousel.addEventListener('touchstart', (e) => startX = e.touches[0].clientX);
-    carousel.addEventListener('touchend', (e) => {
-      const diff = startX - e.changedTouches[0].clientX;
-      if (Math.abs(diff) > 50) goToSlide(currentSlide + (diff > 0 ? 1 : -1));
-    });
-
-    goToSlide(0);
-  }
-
-  
-  const carousel = document.getElementById("carousel");
-  if (carousel) {
-    const slides = carousel.children;
-    const totalSlides = slides.length;
-    let index = 1;
-    let autoSlideInterval;
-
-    // Clone first/last for seamless loop
-    const firstClone = slides[0].cloneNode(true);
-    const lastClone = slides[totalSlides - 1].cloneNode(true);
-    carousel.appendChild(firstClone);
-    carousel.insertBefore(lastClone, slides[0]);
-
-    const newTotal = carousel.children.length;
-    carousel.style.transform = `translateX(-${index * 100}%)`;
-
-    // Preload all images to prevent blank slides on large screens
-    const allImages = carousel.querySelectorAll("img");
-    let loadedCount = 0;
-    allImages.forEach(img => {
-      if (img.complete) {
-        loadedCount++;
-      } else {
-        img.addEventListener("load", () => {
-          loadedCount++;
-          if (loadedCount === allImages.length) startCarousel();
-        });
-      }
-    });
-
-    if (loadedCount === allImages.length) startCarousel();
-
-    function startCarousel() {
-      function moveToSlide() {
-        carousel.style.transition = "transform 0.6s ease-in-out";
-        carousel.style.transform = `translateX(-${index * 100}%)`;
-      }
-
-      function nextSlide() {
-        index++;
-        moveToSlide();
-      }
-
-      function prevSlide() {
-        index--;
-        moveToSlide();
-      }
-
-      function startAutoSlide() {
-        autoSlideInterval = setInterval(() => nextSlide(), 3000);
-      }
-
-      function stopAutoSlide() {
-        clearInterval(autoSlideInterval);
-      }
-
-      carousel.addEventListener("transitionend", () => {
-        if (index === newTotal - 1) {
-          carousel.style.transition = "none";
-          index = 1;
-          carousel.style.transform = `translateX(-${index * 100}%)`;
-        } else if (index === 0) {
-          carousel.style.transition = "none";
-          index = newTotal - 2;
-          carousel.style.transform = `translateX(-${index * 100}%)`;
-        }
-      });
-
-      const nextBtn = document.getElementById("nextBtn");
-      const prevBtn = document.getElementById("prevBtn");
-      if (nextBtn) nextBtn.addEventListener("click", () => { stopAutoSlide(); nextSlide(); startAutoSlide(); });
-      if (prevBtn) prevBtn.addEventListener("click", () => { stopAutoSlide(); prevSlide(); startAutoSlide(); });
-
-      carousel.addEventListener("mouseenter", stopAutoSlide);
-      carousel.addEventListener("mouseleave", startAutoSlide);
-
-      startAutoSlide();
-    }
-  }
 });
+
+// Reviews Carousel Functionality
+function initReviewsCarousel() {
+  const carousel = document.getElementById('reviews-carousel');
+  const prevBtn = document.getElementById('prev-btn');
+  const nextBtn = document.getElementById('next-btn');
+  const dots = document.querySelectorAll('[data-slide]');
+  
+  if (!carousel) return;
+  
+  let currentSlide = 0;
+  const totalSlides = 6; // Total number of reviews
+  
+  // Function to go to a specific slide
+  function goToSlide(slideIndex) {
+    if (slideIndex < 0) slideIndex = totalSlides - 1;
+    if (slideIndex >= totalSlides) slideIndex = 0;
+    
+    currentSlide = slideIndex;
+    const translateX = -currentSlide * 100;
+    carousel.style.transform = `translateX(${translateX}%)`;
+    
+    // Update dots
+    dots.forEach((dot, index) => {
+      if (index === currentSlide) {
+        dot.classList.remove('bg-gray-300');
+        dot.classList.add('bg-blue-500');
+      } else {
+        dot.classList.remove('bg-blue-500');
+        dot.classList.add('bg-gray-300');
+      }
+    });
+  }
+  
+  // Event listeners for navigation buttons
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      goToSlide(currentSlide - 1);
+    });
+  }
+  
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      goToSlide(currentSlide + 1);
+    });
+  }
+  
+  // Event listeners for dots
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      goToSlide(index);
+    });
+  });
+  
+  // Auto-play functionality
+  let autoPlayInterval = setInterval(() => {
+    goToSlide(currentSlide + 1);
+  }, 5000); // Change slide every 5 seconds
+  
+  // Pause auto-play on hover
+  carousel.addEventListener('mouseenter', () => {
+    clearInterval(autoPlayInterval);
+  });
+  
+  carousel.addEventListener('mouseleave', () => {
+    autoPlayInterval = setInterval(() => {
+      goToSlide(currentSlide + 1);
+    }, 5000);
+  });
+  
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') {
+      goToSlide(currentSlide - 1);
+    } else if (e.key === 'ArrowRight') {
+      goToSlide(currentSlide + 1);
+    }
+  });
+  
+  // Touch/swipe support for mobile
+  let startX = 0;
+  let endX = 0;
+  
+  carousel.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+  });
+  
+  carousel.addEventListener('touchend', (e) => {
+    endX = e.changedTouches[0].clientX;
+    handleSwipe();
+  });
+  
+  function handleSwipe() {
+    const swipeThreshold = 50;
+    const diff = startX - endX;
+    
+    if (Math.abs(diff) > swipeThreshold) {
+      if (diff > 0) {
+        // Swiped left - next slide
+        goToSlide(currentSlide + 1);
+      } else {
+        // Swiped right - previous slide
+        goToSlide(currentSlide - 1);
+      }
+    }
+  }
+  
+  // Initialize first slide
+  goToSlide(0);
+}
+
+  const carousel = document.getElementById("carousel");
+  const slides = carousel.children;
+  const totalSlides = slides.length;
+  let index = 1; // start from the first "real" slide
+  let autoSlideInterval;
+
+  // Clone first and last slides for seamless looping
+  const firstClone = slides[0].cloneNode(true);
+  const lastClone = slides[totalSlides - 1].cloneNode(true);
+
+  carousel.appendChild(firstClone);
+  carousel.insertBefore(lastClone, slides[0]);
+
+  // Update total slides after cloning
+  const newTotal = carousel.children.length;
+
+  // Start position at first "real" slide
+  carousel.style.transform = `translateX(-${index * 100}%)`;
+
+  function moveToSlide() {
+    carousel.style.transition = "transform 0.6s ease-in-out";
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() {
+    index++;
+    moveToSlide();
+  }
+
+  function prevSlide() {
+    index--;
+    moveToSlide();
+  }
+
+  function startAutoSlide() {
+    autoSlideInterval = setInterval(() => {
+      nextSlide();
+    }, 3000);
+  }
+
+  function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+  }
+
+  // Reset transition at edges for smooth looping
+  carousel.addEventListener("transitionend", () => {
+    if (index === newTotal - 1) {
+      // Reached cloned first slide
+      carousel.style.transition = "none";
+      index = 1; // Jump to real first
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+    } else if (index === 0) {
+      // Reached cloned last slide
+      carousel.style.transition = "none";
+      index = newTotal - 2; // Jump to real last
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+    }
+  });
+
+  // Button controls
+  document.getElementById("nextBtn").addEventListener("click", () => {
+    stopAutoSlide();
+    nextSlide();
+    startAutoSlide();
+  });
+
+  document.getElementById("prevBtn").addEventListener("click", () => {
+    stopAutoSlide();
+    prevSlide();
+    startAutoSlide();
+  });
+
+  // Pause on hover/focus for accessibility
+  carousel.addEventListener("mouseenter", stopAutoSlide);
+  carousel.addEventListener("mouseleave", startAutoSlide);
+
+  // Start the loop
+  startAutoSlide();
+
+
 </script>
 
+  
 </body>
 </html>
 
