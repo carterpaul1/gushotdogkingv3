@@ -1,0 +1,271 @@
+[
+  {
+    "name": "Hot Dog",
+    "price": 2.95,
+    "category": "Dogs",
+    "tags": ["classic"]
+  },
+  {
+    "name": "Hot Dog w/cheese",
+    "price": 3.35,
+    "category": "Dogs",
+    "tags": ["cheese"]
+  },
+  {
+    "name": "FootLong",
+    "price": 5.90,
+    "category": "Dogs",
+    "tags": ["large","classic"]
+  },
+  {
+    "name": "FootLong w/cheese",
+    "price": 6.70,
+    "category": "Dogs",
+    "tags": ["large", "cheese"]
+  },
+  {
+    "name": "Beer Bratwurst",
+    "price": 4.95,
+    "category": "Dogs",
+    "tags": ["bratwurst"]
+  },
+  {
+    "name": "Beer Bratwurst w/cheese",
+    "price": 5.55,
+    "category": "Dogs",
+    "tags": ["bratwurst", "cheese"]
+  },
+  {
+    "name": "Corn Dog",
+    "price": 3.95,
+    "category": "Dogs",
+    "tags": ["fried", "classic"]
+  },
+
+  {
+    "name": "Burger",
+    "price": 4.95,
+    "category": "Burgers and Sandwiches",
+    "tags": ["burger", "classic"]
+  },
+  {
+    "name": "Cheese burger",
+    "price": 5.70,
+    "category": "Burgers and Sandwiches",
+    "tags": ["burger", "cheese", "classic"]
+  },
+  {
+    "name": "BBQ Sandwich small",
+    "price": 4.95,
+    "category": "Burgers and Sandwiches",
+    "tags": ["bbq", "sandwich"]
+  },
+  {
+    "name": "BBQ Sandwich large",
+    "price": 6.95,
+    "category": "Burgers and Sandwiches",
+    "tags": ["bbq", "sandwich", "large"]
+  },
+  {
+    "name": "BBQ Sandwich w/cheese small",
+    "price": 5.50,
+    "category": "Burgers and Sandwiches",
+    "tags": ["bbq", "sandwich", "cheese"]
+  },
+  {
+    "name": "BBQ Sandwich w/cheese large",
+    "price": 7.45,
+    "category": "Burgers and Sandwiches",
+    "tags": ["bbq", "sandwich", "cheese", "large"]
+  },
+  {
+    "name": "BBQ Platter",
+    "price": 10.50,
+    "category": "Burgers and Sandwiches",
+    "tags": ["bbq", "platter"]
+  },
+  {
+    "name": "BBQ Platter w/cheese",
+    "price": 11.25,
+    "category": "Burgers and Sandwiches",
+    "tags": ["bbq", "platter", "cheese"]
+  },
+  {
+    "name": "Chicken Sandwich",
+    "price": 6.00,
+    "category": "Burgers and Sandwiches",
+    "tags": ["chicken", "sandwich"]
+  },
+  {
+    "name": "Chicken Sandwich w/cheese",
+    "price": 6.75,
+    "category": "Burgers and Sandwiches",
+    "tags": ["chicken", "sandwich", "cheese"]
+  },
+
+  {
+    "name": "French Fries",
+    "price": 2.85,
+    "category": "Side Items",
+    "tags": ["fries","classic"]
+  },
+  {
+    "name": "French Fries w/cheese",
+    "price": 4.45,
+    "category": "Side Items",
+    "tags": ["fries", "cheese"]
+  },
+  {
+    "name": "French Fries w/chili",
+    "price": 4.40,
+    "category": "Side Items",
+    "tags": ["fries", "chili"]
+  },
+  {
+    "name": "French Fries w/chili and cheese",
+    "price": 5.50,
+    "category": "Side Items",
+    "tags": ["fries", "chili", "cheese","classic"]
+  },
+  {
+    "name": "Onion Rings",
+    "price": 4.95,
+    "category": "Side Items",
+    "tags": ["fried","classic"]
+  },
+  {
+    "name": "Chips",
+    "price": 1.95,
+    "category": "Side Items",
+    "tags": ["snack"]
+  },
+
+  {
+    "name": "Kids Shake",
+    "price": 3.75,
+    "category": "Kids Items or 1/2 Orders",
+    "tags": ["kids", "shake"]
+  },
+  {
+    "name": "Wiener",
+    "price": 2.90,
+    "category": "Kids Items or 1/2 Orders",
+    "tags": ["kids"]
+  },
+  {
+    "name": "Wiener w/cheese",
+    "price": 3.30,
+    "category": "Kids Items or 1/2 Orders",
+    "tags": ["kids", "cheese"]
+  },
+  {
+    "name": "1/2 order fries",
+    "price": 2.25,
+    "category": "Kids Items or 1/2 Orders",
+    "tags": ["fries", "small"]
+  },
+  {
+    "name": "1/2 order fries w/cheese",
+    "price": 3.00,
+    "category": "Kids Items or 1/2 Orders",
+    "tags": ["fries", "small", "cheese"]
+  },
+  {
+    "name": "1/2 order fries w/chili",
+    "price": 3.50,
+    "category": "Kids Items or 1/2 Orders",
+    "tags": ["fries", "small", "chili"]
+  },
+  {
+    "name": "1/2 order onion rings",
+    "price": 3.50,
+    "category": "Kids Items or 1/2 Orders",
+    "tags": ["onion rings", "small"]
+  },
+  {
+    "name": "1/2 order onion rings w/cheese",
+    "price": 4.00,
+    "category": "Kids Items or 1/2 Orders",
+    "tags": ["onion rings", "small", "cheese"]
+  },
+
+  {
+    "name": "Funnel Cake Fries",
+    "price": 2.95,
+    "category": "Sweets",
+    "tags": ["dessert"]
+  },
+  {
+    "name": "Funnel Cake Fries w/chocolate",
+    "price": 3.50,
+    "category": "Sweets",
+    "tags": ["dessert", "chocolate","classic"]
+  },
+  {
+    "name": "Homemade Banana Pudding",
+    "price": 3.50,
+    "category": "Sweets",
+    "tags": ["dessert", "homemade","classic"]
+  },
+  {
+    "name": "Milk Shake kids",
+    "price": 3.75,
+    "category": "Sweets",
+    "tags": ["shake", "kids"]
+  },
+  {
+    "name": "Milk Shake med",
+    "price": 4.50,
+    "category": "Sweets",
+    "tags": ["shake"]
+  },
+  {
+    "name": "Milk Shake large",
+    "price": 5.25,
+    "category": "Sweets",
+    "tags": ["shake", "large"]
+  },
+
+  {
+    "name": "Pepsi Products sm",
+    "price": 1.90,
+    "category": "Drinks",
+    "tags": ["drink", "soda"]
+  },
+  {
+    "name": "Pepsi Products med",
+    "price": 2.50,
+    "category": "Drinks",
+    "tags": ["drink", "soda"]
+  },
+  {
+    "name": "Pepsi Products large",
+    "price": 2.75,
+    "category": "Drinks",
+    "tags": ["drink", "soda", "large"]
+  },
+  {
+    "name": "Pepsi Products xlarge",
+    "price": 3.25,
+    "category": "Drinks",
+    "tags": ["drink", "soda", "xlarge"]
+  },
+  {
+    "name": "Iced Tea",
+    "price": 2.75,
+    "category": "Drinks",
+    "tags": ["drink", "tea"]
+  },
+  {
+    "name": "Bottled Water",
+    "price": 2.75,
+    "category": "Drinks",
+    "tags": ["drink", "water"]
+  },
+  {
+    "name": "Coffee",
+    "price": 2.50,
+    "category": "Drinks",
+    "tags": ["drink", "coffee"]
+  }
+]
