@@ -1,830 +1,542 @@
- <!DOCTYPE html>
- <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Craving the best hot dogs in Newport News? Visit Gus's Hot Dog King for legendary hot dogs, beer bratwursts, and friendly service since 1972! Dine in or take out today.">
-  <meta name="keywords" content="Gus's Hot Dog King, best hot dogs in Newport News, food near Jefferson Ave, Newport News hot dog restaurant, Newport News family restaurant, gourmet hot dogs, hot dogs made all the way, beer bratwurst, family-friendly restaurants, quick bite Newport News, hot dog takeout, best hot dogs near me, loaded hot dogs, hot dog combos, custom hot dogs, Newport News food, dine-in hot dogs, fast food Newport News, best hot dogs for takeout in Newport News, where to get hot dogs in Newport News"/>
+
+  <title>Gus's Hot Dog King | Newport News Legendary Hot Dogs Since 1972</title>
+
+  <meta
+    name="description"
+    content="Serving Newport News since 1972 with legendary hot dogs, bratwursts, fries, and family-friendly dining."
+  />
+
   <meta name="author" content="Gus's Hot Dog King" />
   <meta name="robots" content="index, follow" />
-  <meta name="language" content="English" />
-  <meta name="geo.region" content="US-VA" />
-  <meta name="geo.placename" content="Newport News" />
-  <meta name="geo.position" content="37.063776;-76.462717" />
-  <meta name="ICBM" content="37.063776, -76.462717" />
-  <link rel="alternate" hreflang="en" href="https://www.gushotdogking.com/" />
-  <meta property="og:image" content="https://www.gushotdogking.com/public/images/HDK_LOGO.webp" />
-  <meta property="og:url" content="https://www.gushotdogking.com" />
-  <meta property="og:title" content="Gus's Hot Dog King | Best Hot Dogs in Newport News Since 1972" />
-  <meta property="og:description" content="Craving the best hot dogs in Newport News? Visit Gus's Hot Dog King for legendary hot dogs, beer bratwursts, and friendly service since 1972!" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Gus's Hot Dog King" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Gus's Hot Dog King | Best Hot Dogs in Newport News Since 1972" />
-  <meta name="twitter:description" content="Craving the best hot dogs in Newport News? Visit Gus's Hot Dog King for legendary hot dogs, beer bratwursts, and friendly service since 1972!" />
-  <meta name="twitter:image" content="https://www.gushotdogking.com/public/images/HDK_LOGO.webp" />
+
   <link rel="canonical" href="https://www.gushotdogking.com" />
-  <link rel="icon" type="image/webp" href="public/images/HDK_LOGO.webp" />
-  <title>Gus's Hot Dog King | Best Hot Dogs in Newport News Since 1972</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <link rel="preload" href="public/images/HDK_LOGO.webp" as="image" />
-  <link rel="preload" href="public/images/gus_making_dog.webp" as="image" />
-  <link rel="dns-prefetch" href="//connect.facebook.net" />
-  <link rel="dns-prefetch" href="//maps.google.com" />
-  <script defer src="navigation.js"></script>
-  <script async src="structured-data.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <!-- Custom Fonts -->
-  <style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-    }
-    h1, h2, h3 {
-      font-family: 'Lobster', cursive;
-    }
-    
-  .fb-video-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 177%; /* Aspect ratio for vertical reels (~9:16) */
-    height: 0;
-    overflow: hidden;
-  }
 
-  .fb-video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  </style>
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8X7CZDXQSP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8X7CZDXQSP');
-</script>
-<body class="bg-white text-gray-800">
-  <!-- Facebook SDK -->
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" 
-  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0" nonce="YOUR_NONCE"></script>
-
-  <header class="w-full bg-white border-none py-4 px-4 flex items-center justify-between" role="banner">
-  <!-- Skip to Content -->
-  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-purple-900 focus:text-white focus:p-2 focus:rounded">Skip to main content</a>
-
-  <!-- Logo / Title -->
-  <div class="flex items-center gap-4">
-    <img src="public/images/HDK_LOGO.webp" alt="Gus's Hot Dog King logo" class="w-24 h-24 sm:w-32 sm:h-32 object-contain" />
-    <h1 class="text-2xl sm:text-4xl font-bold text-purple-900">Gus's Hot Dog King</h1>
-  </div>
-
-  <!-- Mobile Menu Button -->
-  <button id="toggleSidebar" aria-label="Open Menu" aria-controls="sidebar" aria-expanded="false"
-          class="p-2 bg-purple-900 text-white rounded focus:outline-none focus:ring-2 focus:ring-yellow-400 sm:hidden">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-    </svg>
-  </button>
-
-  <!-- Placeholder for nav -->
-  <div id="navSidebar"></div>
-</header>
-
-  <main role="main" aria-label="Landing page for Gus's Hot Dog King" class="min-h-screen">
-
-    <section class="py-12 bg-white border-b border-yellow-400 text-center px-4">
-      <h1 class="text-3xl md:text-4xl font-bold text-purple-900 mb-4">Best Hot Dogs in Newport News – Since 1972</h1>
-      <p class="text-lg md:text-xl text-gray-800 leading-relaxed max-w-3xl mx-auto">
-        Looking for the <strong>best hot dogs in Newport News</strong>? At Gus's Hot Dog King, we've been serving
-        <strong>gourmet hot dogs</strong>, savory <strong>beer bratwursts</strong>, and loaded <strong>fresh made chili</strong>
-        since 1972. Conveniently located on Jefferson Avenue near Harpersville, we offer fast <strong>takeout</strong>, friendly
-        <strong>dine-in service</strong>, and a <strong>family-friendly restaurant</strong> experience locals love. Stop by today for
-        the best <strong>custom hot dogs</strong> in town!
-      </p>
-    </section>
-    <section class="bg-gray-100 py-16 text-center px-6">
-  <img
-    src="public/images/gus_making_dog.webp"
-    alt="Gus making a famous all the way hot dog at Gus's Hot Dog King in Newport News"
-    class="mx-auto w-52 h-52 rounded-full border-4 border-yellow-500 object-cover mb-6"
-    loading="lazy"
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gus's Hot Dog King" />
+  <meta
+    property="og:description"
+    content="Newport News legendary hot dogs since 1972."
   />
-  
-  <h2 class="text-4xl font-bold text-gray-900">Welcome to Gus's Hot Dog King</h2>
-  <p class="text-xl mt-4 mb-8 text-gray-700">Experience The Royal Treatment With The King</p>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.gushotdogking.com" />
+  <meta
+    property="og:image"
+    content="https://www.gushotdogking.com/public/images/HDK_LOGO.webp"
+  />
 
-</section>
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gus's Hot Dog King" />
+  <meta
+    name="twitter:description"
+    content="Newport News legendary hot dogs since 1972."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.gushotdogking.com/public/images/HDK_LOGO.webp"
+  />
 
-      <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow">
-        <h2 class="text-2xl font-semibold mb-4 flex items-center justify-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21V7a2 2 0 012-2h3V3h4v2h3a2 2 0 012 2v14m-5 0v-4H8v4" />
-          </svg>
-          Business Hours
-        </h2>
-        <table class="w-full text-left text-sm">
-          <thead>
-            <tr>
-              <th class="pb-2">Day</th>
-              <th class="pb-2">Hours</th>
-            </tr>
-          </thead>
-          <tbody id="hoursTable"></tbody>
-        </table>
-      </div>
-    </section>
-   
-   <section class="bg-purple-100 py-10 text-center px-6">
-  <h3 class="text-2xl font-bold text-purple-900 mb-4">Dine In or Take Out Today</h3>
-  <p class="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
-    Whether you're dining in with family or grabbing <strong>hot dogs to go</strong>, Gus's Hot Dog King is your destination for flavor, tradition, and fast service. Located conveniently near Jefferson Ave in <strong>Newport News, VA</strong>, we make it easy to satisfy your cravings.
-  </p>
-  <a href="menu.html" class="inline-flex items-center justify-center bg-yellow-800 hover:bg-yellow-900 text-white text-lg font-semibold py-3 px-6 rounded-xl shadow-md transition duration-300 space-x-3">
-    <!-- Menu SVG Icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
-    </svg>
-    <span>View Our Menu</span>
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    type="image/webp"
+    href="public/images/HDK_LOGO.webp"
+  />
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Google Fonts -->
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Open+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+ <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- Skip Link -->
+  <a
+    href="#main-content"
+    class="visually-hidden-focusable position-absolute top-0 start-0 bg-dark text-white p-3"
+  >
+    Skip to content
   </a>
-</section>
-<!-- Fan Favorites Carousel Section -->
-<section class="bg-gray-100 py-16">
-  <div class="max-w-screen-xl mx-auto px-6">
-    <h2 class="text-4xl font-bold text-center text-purple-900 mb-10">
-      Fan Favorites
-    </h2>
 
-    <!-- Carousel Container -->
-    <div class="relative overflow-hidden">
-      <div
-        id="carousel"
-        class="flex transition-transform duration-700 ease-in-out"
-        style="transform: translateX(0%);"
-      >
-        <!-- Slide 1 -->
-        <div class="flex-none w-full md:w-1/3 px-4 text-center">
-          <img
-            src="public/images/dog_w_pickles.jpg"
-            alt="Hot dog with pickles"
-            class="w-full h-80 object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
-          />
-          <p class="mt-4 text-xl font-semibold text-yellow-800">
-            Classic Hot Dog With Pickles
-          </p>
-        </div>
+  <!-- Navigation -->
+  <header class="sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
+      <div class="container">
 
-        <!-- Slide 2 -->
-        <div class="flex-none w-full md:w-1/3 px-4 text-center">
+        <a
+          class="navbar-brand d-flex align-items-center gap-3"
+          href="index.html"
+        >
           <img
-            src="public/images/brat.jpg"
-            alt="Bratwurst"
-            class="w-full h-80 object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
+            src="public/images/HDK_LOGO.webp"
+            alt="Gus's Hot Dog King Logo"
+            width="75"
+            height="75"
+            loading="eager"
           />
-          <p class="mt-4 text-xl font-semibold text-yellow-800">
-            Beer Bratwurst
-          </p>
-        </div>
 
-        <!-- Slide 3 -->
-        <div class="flex-none w-full md:w-1/3 px-4 text-center">
-          <img
-            src="public/images/hot_chocloate.jpg"
-            alt="Hot Chocolate"
-            class="w-full h-80 object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
-          />
-          <p class="mt-4 text-xl font-semibold text-yellow-800">
-            Mug of Hot Chocolate 
-          </p>
-        </div>
+          <span>Gus's Hot Dog King</span>
+        </a>
 
-        <!-- Slide 4 -->
-        <div class="flex-none w-full md:w-1/3 px-4 text-center">
-          <img
-            src="public/images/loaded_hot_dog.webp"
-            alt="Loaded Hot Dog"
-            class="w-full h-80 object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
-          />
-          <p class="mt-4 text-xl font-semibold text-yellow-800">
-            Loaded Hot Dog
-          </p>
-        </div>
-        <!-- Slide 5 -->
-        <div class="flex-none w-full md:w-1/3 px-4 text-center">
-          <img
-            src="public/images/banana_pudding.webp"
-            alt="Banana Pudding "
-            class="w-full h-80 object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
-          />
-          <p class="mt-4 text-xl font-semibold text-yellow-800">
-            Banana Pudding  
-          </p>
-        </div>
-        <!-- Slide 6 -->
-        <div class="flex-none w-full md:w-1/3 px-4 text-center">
-          <img
-            src="public/images/funnel_fries.jpg"
-            alt="Funnel Fries"
-            class="w-full h-80 object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
-          />
-          <p class="mt-4 text-xl font-semibold text-yellow-800">
-            Funnel Fries 
-          </p>
-        </div>
-         <!-- Slide 7 -->
-        <div class="flex-none w-full md:w-1/3 px-4 text-center">
-          <img
-            src="public/images/dog_w_sour.jpg"
-            alt="Hot Dog With Sauerkraut"
-            class="w-full h-80 object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
-          />
-          <p class="mt-4 text-xl font-semibold text-yellow-800">
-            Hot Dog With Sauerkraut
-          </p>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Location</a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="https://www.doordash.com/store/gus's-hot-dog-king-newport-news-926834/18420549/?pickup=false"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-danger rounded-pill px-4 fw-semibold"
+              >
+                Order Door Dash
+              </a>
+            </li>
+
+          </ul>
         </div>
       </div>
+    </nav>
+  </header>
 
-      <!-- Controls -->
-      <button
-        id="prevBtn"
-        class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-purple-900 text-white p-3 rounded-full hover:bg-purple-700 focus:outline-none"
-      >
-        &#10094;
-      </button>
-      <button
-        id="nextBtn"
-        class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-purple-900 text-white p-3 rounded-full hover:bg-purple-700 focus:outline-none"
-      >
-        &#10095;
-      </button>
-    </div>
-  </div>
-</section>
+  <main id="main-content">
 
+    <!-- Hero -->
+    <section class="hero-section">
+      <div class="container">
 
+        <div class="hero-content mx-auto">
 
-  
+          <h1>
+            Newport News Legendary Hot Dogs Since 1972
+          </h1>
 
+          <p>
+            Famous hot dogs, beer bratwursts, fresh chili, fries, and family tradition served with hometown hospitality.
+          </p>
 
+          <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
 
-    <section class="bg-yellow-100 py-10 px-6 text-center rounded-2xl shadow-lg max-w-4xl mx-auto mt-10">
-  <h2 class="text-3xl font-bold text-gray-800 mb-4">Craving The King Of Hot Dogs? Get it delivered!</h2>
-  <p class="text-lg text-gray-700 mb-6">Order your favorites from Gus's Hot Dog King and have them delivered straight to your door with DoorDash.</p>
-  <a href="https://www.doordash.com/store/gus's-hot-dog-king-newport-news-926834/18420549/?event_type=autocomplete&pickup=false" target="_blank" class="inline-flex items-center justify-center bg-gray-800 text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-gray-900 transition duration-300 space-x-3">
-    <!-- DoorDash SVG Logo in Red -->
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="#FF3000">
-      <path d="M22.7 7.3c0-.4-.3-.7-.7-.7h-7.6l-1.8 5.2h3.5c.4 0 .7.3.7.7s-.3.7-.7.7h-4.7c-.3 0-.5-.2-.6-.5l-1.8-5.2c-.1-.3.1-.6.4-.7.1 0 .1 0 .2 0h9.6c.4 0 .7.3.7.7 0 .1 0 .2-.1.2l-2.2 6.5c-.1.3-.4.5-.7.5h-6.7c-.4 0-.7-.3-.7-.7s.3-.7.7-.7h5.3l.9-2.7h-3.5c-.3 0-.5-.2-.6-.5l-1.8-5.2c-.1-.3.1-.6.4-.7.1 0 .1 0 .2 0h9.6c.4 0 .7.3.7.7s-.3.7-.7.7z"/>
-    </svg>
-    <span>Order Now on DoorDash</span>
-  </a>
-</section>
-
-
-    <!-- Reviews Section -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-screen-xl mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">What Our Customers Say</h2>
-        
-        <!-- Combined Reviews Carousel -->
-        <div class="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
-          <div class="relative">
-            <!-- Carousel Container -->
-            <div class="overflow-hidden">
-              <div id="reviews-carousel" class="flex transition-transform duration-500 ease-in-out">
-                <!-- Review 1 -->
-                <div class="w-full flex-shrink-0 px-4">
-                  <div class="text-center">
-                    <div class="flex justify-center items-center mb-4">
-                      <svg class="w-6 h-6 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M22 12c0-5.522-4.478-10-10-10S2 6.478 2 12a9.998 9.998 0 008.187 9.8v-6.93h-2.46v-2.87h2.46V9.845c0-2.438 1.457-3.79 3.686-3.79 1.068 0 2.185.19 2.185.19v2.4h-1.232c-1.215 0-1.593.754-1.593 1.528v1.838h2.713l-.433 2.87h-2.28v6.93A9.998 9.998 0 0022 12z"/>
-                      </svg>
-                      <span class="text-sm text-blue-600 font-medium">Facebook Review</span>
-                    </div>
-                    <div class="flex justify-center items-center mb-4">
-                      <div class="flex text-yellow-400">
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      </div>
-                      <span class="ml-2 text-lg font-semibold text-gray-700">5/5</span>
-                    </div>
-                    <p class="text-gray-600 mb-4 text-lg italic leading-relaxed">"Im 50 yrs old. I ate here once a week until i was in my early 20's. A few months back i took my wife for the first time. Now we eat here at least once a week. The staff is amazing and the food is just how i remember it being. Cosy atmosphere · Great food"</p>
-                    <p class="text-lg font-semibold text-gray-800">- Michael Douglas</p>
-                  </div>
-                </div>
-
-                <!-- Review 2 -->
-                <div class="w-full flex-shrink-0 px-4">
-                  <div class="text-center">
-                    <div class="flex justify-center items-center mb-4">
-                      <svg class="w-6 h-6 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M22 12c0-5.522-4.478-10-10-10S2 6.478 2 12a9.998 9.998 0 008.187 9.8v-6.93h-2.46v-2.87h2.46V9.845c0-2.438 1.457-3.79 3.686-3.79 1.068 0 2.185.19 2.185.19v2.4h-1.232c-1.215 0-1.593.754-1.593 1.528v1.838h2.713l-.433 2.87h-2.28v6.93A9.998 9.998 0 0022 12z"/>
-                      </svg>
-                      <span class="text-sm text-blue-600 font-medium">Facebook Review</span>
-                    </div>
-                    <div class="flex justify-center items-center mb-4">
-                      <div class="flex text-yellow-400">
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      </div>
-                      <span class="ml-2 text-lg font-semibold text-gray-700">5/5</span>
-                    </div>
-                    <p class="text-gray-600 mb-4 text-lg italic leading-relaxed">"I love the hotdogs they are the best and everything else on the menu is delicious."</p>
-                    <p class="text-lg font-semibold text-gray-800">- Rebecca Tharp</p>
-                  </div>
-                </div>
-
-                <!-- Review 3 -->
-                <div class="w-full flex-shrink-0 px-4">
-                  <div class="text-center">
-                    <div class="flex justify-center items-center mb-4">
-                      <svg class="w-6 h-6 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M22 12c0-5.522-4.478-10-10-10S2 6.478 2 12a9.998 9.998 0 008.187 9.8v-6.93h-2.46v-2.87h2.46V9.845c0-2.438 1.457-3.79 3.686-3.79 1.068 0 2.185.19 2.185.19v2.4h-1.232c-1.215 0-1.593.754-1.593 1.528v1.838h2.713l-.433 2.87h-2.28v6.93A9.998 9.998 0 0022 12z"/>
-                      </svg>
-                      <span class="text-sm text-blue-600 font-medium">Facebook Review</span>
-                    </div>
-                    <div class="flex justify-center items-center mb-4">
-                      <div class="flex text-yellow-400">
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      </div>
-                      <span class="ml-2 text-lg font-semibold text-gray-700">5/5</span>
-                    </div>
-                    <p class="text-gray-600 mb-4 text-lg italic leading-relaxed">"every time I come to town I have to stop here and get something to eat Child-friendly · Indoor Dining"</p>
-                    <p class="text-lg font-semibold text-gray-800">- Corey Hunter</p>
-                  </div>
-                </div>
-
-                <!-- Review 4 -->
-                <div class="w-full flex-shrink-0 px-4">
-                  <div class="text-center">
-                    <div class="flex justify-center items-center mb-4">
-                      <svg class="w-6 h-6 text-red-600 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M20.16 12.73c-.28-.32-.64-.58-1.04-.8-.4-.22-.84-.4-1.32-.54-.48-.14-.98-.21-1.5-.21-.52 0-1.02.07-1.5.21-.48.14-.92.32-1.32.54-.4.22-.76.48-1.04.8-.28.32-.5.68-.68 1.08-.18.4-.32.84-.42 1.32-.1.48-.15.98-.15 1.5s.05 1.02.15 1.5c.1.48.24.92.42 1.32.18.4.4.76.68 1.08.28.32.64.58 1.04.8.4.22.84.4 1.32.54.48.14.98.21 1.5.21.52 0 1.02-.07 1.5-.21.48-.14.92-.32 1.32-.54.4-.22.76-.48 1.04-.8.28-.32.5-.68.68-1.08.18-.4.32-.84.42-1.32.1-.48.15-.98.15-1.5s-.05-1.02-.15-1.5c-.1-.48-.24-.92-.42-1.32-.18-.4-.4-.76-.68-1.08z"/>
-                      </svg>
-                      <span class="text-sm text-red-600 font-medium">Yelp Review</span>
-                    </div>
-                    <div class="flex justify-center items-center mb-4">
-                      <div class="flex text-yellow-400">
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      </div>
-                      <span class="ml-2 text-lg font-semibold text-gray-700">5/5</span>
-                    </div>
-                    <p class="text-gray-600 mb-4 text-lg italic leading-relaxed">"Fabulous! This landmark restaurant has the best hotdogs in Hampton Roads! The owners are so friendly and treat you like family."</p>
-                    <p class="text-lg font-semibold text-gray-800">- Mark F</p>
-                    <p class="text-xs text-gray-400">May 10, 2025</p>
-                  </div>
-                </div>
-
-                <!-- Review 5 -->
-                <div class="w-full flex-shrink-0 px-4">
-                  <div class="text-center">
-                    <div class="flex justify-center items-center mb-4">
-                      <svg class="w-6 h-6 text-red-600 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M20.16 12.73c-.28-.32-.64-.58-1.04-.8-.4-.22-.84-.4-1.32-.54-.48-.14-.98-.21-1.5-.21-.52 0-1.02.07-1.5.21-.48.14-.92.32-1.32.54-.4.22-.76.48-1.04.8-.28.32-.5.68-.68 1.08-.18.4-.32.84-.42 1.32-.1.48-.15.98-.15 1.5s.05 1.02.15 1.5c.1.48.24.92.42 1.32.18.4.4.76.68 1.08.28.32.64.58 1.04.8.4.22.84.4 1.32.54.48.14.98.21 1.5.21.52 0 1.02-.07 1.5-.21.48-.14.92-.32 1.32-.54.4-.22.76-.48 1.04-.8.28-.32.5-.68.68-1.08.18-.4.32-.84.42-1.32.1-.48.15-.98.15-1.5s-.05-1.02-.15-1.5c-.1-.48-.24-.92-.42-1.32-.18-.4-.4-.76-.68-1.08z"/>
-                      </svg>
-                      <span class="text-sm text-red-600 font-medium">Yelp Review</span>
-                    </div>
-                    <div class="flex justify-center items-center mb-4">
-                      <div class="flex text-yellow-400">
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      </div>
-                      <span class="ml-2 text-lg font-semibold text-gray-700">5/5</span>
-                    </div>
-                    <p class="text-gray-600 mb-4 text-lg italic leading-relaxed">"After a long day out and about I headed here for a nice delicious hot dog. It did not disappoint!! Really good prices for a loaded up hot dog. Will come again!!"</p>
-                    <p class="text-lg font-semibold text-gray-800">- Kyle R</p>
-                    <p class="text-xs text-gray-400">January 2, 2025</p>
-                  </div>
-                </div>
-
-                <!-- Review 6 -->
-                <div class="w-full flex-shrink-0 px-4">
-                  <div class="text-center">
-                    <div class="flex justify-center items-center mb-4">
-                      <svg class="w-6 h-6 text-red-600 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M20.16 12.73c-.28-.32-.64-.58-1.04-.8-.4-.22-.84-.4-1.32-.54-.48-.14-.98-.21-1.5-.21-.52 0-1.02.07-1.5.21-.48.14-.92.32-1.32.54-.4.22-.76.48-1.04.8-.28.32-.5.68-.68 1.08-.18.4-.32.84-.42 1.32-.1.48-.15.98-.15 1.5s.05 1.02.15 1.5c.1.48.24.92.42 1.32.18.4.4.76.68 1.08.28.32.64.58 1.04.8.4.22.84.4 1.32.54.48.14.98.21 1.5.21.52 0 1.02-.07 1.5-.21.48-.14.92-.32 1.32-.54.4-.22.76-.48 1.04-.8.28-.32.5-.68.68-1.08.18-.4.32-.84.42-1.32.1-.48.15-.98.15-1.5s-.05-1.02-.15-1.5c-.1-.48-.24-.92-.42-1.32-.18-.4-.4-.76-.68-1.08z"/>
-                      </svg>
-                      <span class="text-sm text-red-600 font-medium">Yelp Review</span>
-                    </div>
-                    <div class="flex justify-center items-center mb-4">
-                      <div class="flex text-yellow-400">
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-6 h-6 fill-gray-300" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      </div>
-                      <span class="ml-2 text-lg font-semibold text-gray-700">4/5</span>
-                    </div>
-                    <p class="text-gray-600 mb-4 text-lg italic leading-relaxed">"I ordered to-go and received the chili cheese hotdog, the bratwurst w/ ketchup, and the french fries. It's a tiny restaurant with tasty food and it's always busy. I used to come here quite often and get the chili cheese hotdog, which is my favorite item to get."</p>
-                    <p class="text-lg font-semibold text-gray-800">- Khalia L.</p>
-                    <p class="text-xs text-gray-400">April 17, 2025</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            
-<!-- Carousel Navigation Buttons -->
-<div role="group" aria-label="Carousel navigation">
-  <button
-    id="prev-btn"
-    name="Previous Slide"
-    aria-label="Previous slide"
-    class="absolute -left-6 sm:-left-10 top-1/2 transform -translate-y-1/2
-           bg-white hover:bg-gray-100 text-gray-800
-           p-2 sm:p-3 rounded-full shadow-lg border border-gray-200
-           transition-all duration-200 hover:scale-110 z-10
-           focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600"
-  >
-    <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-    </svg>
-  </button>
-
-  <button
-    id="next-btn"
-    name="Next Slide"
-    aria-label="Next slide"
-    class="absolute -right-6 sm:-right-10 top-1/2 transform -translate-y-1/2
-           bg-white hover:bg-gray-100 text-gray-800
-           p-2 sm:p-3 rounded-full shadow-lg border border-gray-200
-           transition-all duration-200 hover:scale-110 z-10
-           focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600"
-  >
-    <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-    </svg>
-  </button>
-</div>
-
-          <!-- Dots Indicator -->
-<div class="flex justify-center mt-8 space-x-2" role="group" aria-label="Slide navigation">
-  <button
-    id="slide-dot-0"
-    name="Slide 1"
-    class="w-4 h-4 rounded-full bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600"
-    data-slide="0"
-    aria-label="Go to slide 1"
-    aria-current="true"
-  ></button>
-  <button
-    id="slide-dot-1"
-    name="Slide 2"
-    class="w-4 h-4 rounded-full bg-gray-300 hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600"
-    data-slide="1"
-    aria-label="Go to slide 2"
-  ></button>
-  <button
-    id="slide-dot-2"
-    name="Slide 3"
-    class="w-4 h-4 rounded-full bg-gray-300 hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600"
-    data-slide="2"
-    aria-label="Go to slide 3"
-  ></button>
-  <button
-    id="slide-dot-3"
-    name="Slide 4"
-    class="w-4 h-4 rounded-full bg-gray-300 hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600"
-    data-slide="3"
-    aria-label="Go to slide 4"
-  ></button>
-  <button
-    id="slide-dot-4"
-    name="Slide 5"
-    class="w-4 h-4 rounded-full bg-gray-300 hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600"
-    data-slide="4"
-    aria-label="Go to slide 5"
-  ></button>
-  <button
-    id="slide-dot-5"
-    name="Slide 6"
-    class="w-4 h-4 rounded-full bg-gray-300 hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600"
-    data-slide="5"
-    aria-label="Go to slide 6"
-  ></button>
-</div>
-        </div>
-
-        <!-- Call to Action -->
-        <div class="text-center mt-12">
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">Love Our Food? Leave Us a Review!</h3>
-          <p class="text-lg text-gray-600 mb-6">Your feedback helps us serve you better and helps others discover our delicious hot dogs.</p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://www.facebook.com/Gusshotdogking" target="_blank" rel="noopener" 
-               class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
-              <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M22 12c0-5.522-4.478-10-10-10S2 6.478 2 12a9.998 9.998 0 008.187 9.8v-6.93h-2.46v-2.87h2.46V9.845c0-2.438 1.457-3.79 3.686-3.79 1.068 0 2.185.19 2.185.19v2.4h-1.232c-1.215 0-1.593.754-1.593 1.528v1.838h2.713l-.433 2.87h-2.28v6.93A9.998 9.998 0 0022 12z"/>
-              </svg>
-              Review on Facebook
+            <a
+              href="menu.html"
+              class="btn btn-warning btn-lg rounded-pill px-5 fw-bold"
+            >
+              View Menu
             </a>
-                         <a href="https://www.yelp.com/biz/guss-hot-dog-king-newport-news-2" target="_blank" rel="noopener" 
-                class="inline-flex items-center bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
-               <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                 <path d="M20.16 12.73c-.28-.32-.64-.58-1.04-.8-.4-.22-.84-.4-1.32-.54-.48-.14-.98-.21-1.5-.21-.52 0-1.02.07-1.5.21-.48.14-.92.32-1.32.54-.4.22-.76.48-1.04.8-.28.32-.5.68-.68 1.08-.18.4-.32.84-.42 1.32-.1.48-.15.98-.15 1.5s.05 1.02.15 1.5c.1.48.24.92.42 1.32.18.4.4.76.68 1.08.28.32.64.58 1.04.8.4.22.84.4 1.32.54.48.14.98.21 1.5.21.52 0 1.02-.07 1.5-.21.48-.14.92-.32 1.32-.54.4-.22.76-.48 1.04-.8.28-.32.5-.68.68-1.08.18-.4.32-.84.42-1.32.1-.48.15-.98.15-1.5s-.05-1.02-.15-1.5c-.1-.48-.24-.92-.42-1.32-.18-.4-.4-.76-.68-1.08z"/>
-               </svg>
-               Review on Yelp
-             </a>
+
+            <a
+              href="https://www.doordash.com/store/gus's-hot-dog-king-newport-news-926834/18420549/?pickup=false"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-outline-light btn-lg rounded-pill px-5"
+            >
+              Get Delivery With Door Dash
+            </a>
+
           </div>
         </div>
       </div>
     </section>
-<footer>
-    <!-- Location Section -->
-<section class="py-16 bg-white">
-  <div class="max-w-screen-xl mx-auto px-4 text-center">
-    <h2 class="text-4xl font-bold text-gray-800 mb-8">Visit Us Today</h2>
-    <p class="text-lg text-gray-600 mb-8 inline-flex items-center justify-center space-x-2">
-      <!-- Google Maps Pin SVG Icon -->
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5z"/>
-      </svg>
-      <span>Located conveniently on Jefferson Avenue in Newport News, Virginia</span>
-    </p>
-  </div>
 
+    <!-- Featured Foods -->
+    <section id="favorites" class="py-5 py-lg-6">
+      <div class="container py-5">
 
-        <!-- Google Maps Embed -->
-<div class="mx-auto px-4 py-4 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
-  <div class="relative w-full" style="padding-top: 100%;"> <!-- Square aspect ratio -->
-    <iframe
-      title="Gus's Hot Dog King Location"
-      src="https://www.google.com/maps?q=Gus's+Hot+Dog+King,+Newport+News,+VA&output=embed"
-      class="absolute top-0 left-0 w-full h-full rounded-lg shadow-md"
-      style="border:0;"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </div>
-</div>
-</section>
-   <!-- Copyright -->
-  <div class="bg-yellow-200 text-center text-xs text-brown-700 py-2 border-t border-yellow-300">
-    © 2026 Gus's Hot Dog King. All rights reserved. Serving Great Hotdogs Since 1972. 
-  </div>
-</footer>
+        <h2 class="section-title">
+          Customer Favorites
+        </h2>
 
+        <p class="section-subtitle">
+          Freshly made local favorites that keep Hampton Roads coming back.
+        </p>
 
+        <div class="row g-4">
 
- <script>
-document.addEventListener('DOMContentLoaded', () => {
-  // Load business hours
-  const hours = [
-    { day: "Monday", open: "10:30 AM", close: "6:00 PM" },
-    { day: "Tuesday - Saturday", open: "10:30 AM", close: "8:00 PM" },
-    { day: "Sunday", open: "Closed", close: "" }
-  ];
-  const hoursTable = document.getElementById("hoursTable");
-  if (hoursTable) {
-    hours.forEach(hour => {
-      const row = document.createElement("tr");
-      row.innerHTML = `
-        <td class="py-1 font-medium">${hour.day}</td>
-        <td class="py-1">${hour.open === "Closed" ? '<span class="text-red-600 font-bold">Closed</span>' : `${hour.open} – ${hour.close}`}</td>
-      `;
-      hoursTable.appendChild(row);
-    });
-  }
+          <div class="col-md-6 col-lg-3">
+            <div class="card food-card shadow-sm">
 
-  // Slideshow logic
-  const slideshowImages = [
-    "public/images/brats_on_grill.webp",
-    "public/images/bbq_sandwich.webp",
-    "public/images/cheeseburger.webp",
-    "public/images/bbq_fries.webp",
-    "public/images/loaded_bbq_fries.webp",
-    "public/images/loaded_hot_dog.webp"
-  ];
-  let currentImg = 0;
-  const slideshowElement = document.getElementById("slideshowImage");
-  if (slideshowElement) {
-    slideshowElement.src = slideshowImages[currentImg];
-    setInterval(() => {
-      currentImg = (currentImg + 1) % slideshowImages.length;
-      slideshowElement.src = slideshowImages[currentImg];
-    }, 2000);
-  }
+              <img
+                src="public/images/loaded_hot_dog.webp"
+                class="card-img-top"
+                alt="Loaded Hot Dog"
+                loading="lazy"
+              />
 
-  // Initialize Reviews Carousel
-  initReviewsCarousel();
-});
+              <div class="card-body text-center">
+                <h3 class="h4 fw-bold">
+                  Loaded Hot Dog
+                </h3>
+              </div>
+            </div>
+          </div>
 
-// Reviews Carousel Functionality
-function initReviewsCarousel() {
-  const carousel = document.getElementById('reviews-carousel');
-  const prevBtn = document.getElementById('prev-btn');
-  const nextBtn = document.getElementById('next-btn');
-  const dots = document.querySelectorAll('[data-slide]');
-  
-  if (!carousel) return;
-  
-  let currentSlide = 0;
-  const totalSlides = 6; // Total number of reviews
-  
-  // Function to go to a specific slide
-  function goToSlide(slideIndex) {
-    if (slideIndex < 0) slideIndex = totalSlides - 1;
-    if (slideIndex >= totalSlides) slideIndex = 0;
-    
-    currentSlide = slideIndex;
-    const translateX = -currentSlide * 100;
-    carousel.style.transform = `translateX(${translateX}%)`;
-    
-    // Update dots
-    dots.forEach((dot, index) => {
-      if (index === currentSlide) {
-        dot.classList.remove('bg-gray-300');
-        dot.classList.add('bg-blue-500');
-      } else {
-        dot.classList.remove('bg-blue-500');
-        dot.classList.add('bg-gray-300');
-      }
-    });
-  }
-  
-  // Event listeners for navigation buttons
-  if (prevBtn) {
-    prevBtn.addEventListener('click', () => {
-      goToSlide(currentSlide - 1);
-    });
-  }
-  
-  if (nextBtn) {
-    nextBtn.addEventListener('click', () => {
-      goToSlide(currentSlide + 1);
-    });
-  }
-  
-  // Event listeners for dots
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      goToSlide(index);
-    });
-  });
-  
-  // Auto-play functionality
-  let autoPlayInterval = setInterval(() => {
-    goToSlide(currentSlide + 1);
-  }, 5000); // Change slide every 5 seconds
-  
-  // Pause auto-play on hover
-  carousel.addEventListener('mouseenter', () => {
-    clearInterval(autoPlayInterval);
-  });
-  
-  carousel.addEventListener('mouseleave', () => {
-    autoPlayInterval = setInterval(() => {
-      goToSlide(currentSlide + 1);
-    }, 5000);
-  });
-  
-  // Keyboard navigation
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowLeft') {
-      goToSlide(currentSlide - 1);
-    } else if (e.key === 'ArrowRight') {
-      goToSlide(currentSlide + 1);
+          <div class="col-md-6 col-lg-3">
+            <div class="card food-card shadow-sm">
+
+              <img
+                src="public/images/brat.jpg"
+                class="card-img-top"
+                alt="Beer Bratwurst"
+                loading="lazy"
+              />
+
+              <div class="card-body text-center">
+                <h3 class="h4 fw-bold">
+                  Beer Bratwurst
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card food-card shadow-sm">
+
+              <img
+                src="public/images/funnel_fries.jpg"
+                class="card-img-top"
+                alt="Funnel Fries"
+                loading="lazy"
+              />
+
+              <div class="card-body text-center">
+                <h3 class="h4 fw-bold">
+                  Funnel Fries
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card food-card shadow-sm">
+
+              <img
+                src="public/images/banana_pudding.webp"
+                class="card-img-top"
+                alt="Banana Pudding"
+                loading="lazy"
+              />
+
+              <div class="card-body text-center">
+                <h3 class="h4 fw-bold">
+                  Banana Pudding
+                </h3>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section class="story-section py-5">
+      <div class="container py-5">
+
+        <div class="row align-items-center g-5">
+
+          <div class="col-lg-6">
+
+            <img
+              src="public/images/gus_making_dog.webp"
+              alt="Gus preparing a hot dog"
+              class="img-fluid rounded-4 shadow-lg"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="col-lg-6">
+
+            <h2 class="display-4 fw-bold mb-4">
+              Serving Newport News Since 1972
+            </h2>
+
+            <p class="lead text-muted mb-4">
+              Gus's Hot Dog King has been a local favorite for generations, serving legendary hot dogs, bratwursts, fries, and comfort food classics.
+            </p>
+
+            <p class="mb-4">
+              Whether you're grabbing lunch, dining with family, or stopping in for a quick bite, we pride ourselves on friendly service, quality food, and hometown tradition.
+            </p>
+
+            <a
+              href="menu.html"
+              class="btn btn-dark btn-lg rounded-pill px-5"
+            >
+              Explore Our Menu
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="py-5">
+      <div class="container py-5">
+
+        <h2 class="section-title">
+          What Customers Say
+        </h2>
+
+        <p class="section-subtitle">
+          Loved by locals across Hampton Roads.
+        </p>
+
+        <div class="row g-4">
+
+          <div class="col-lg-4">
+            <div class="review-card">
+
+              <div class="stars">★★★★★</div>
+
+              <p class="fs-5 fst-italic">
+                “Best hot dogs in Hampton Roads. The owners treat you like family.”
+              </p>
+
+              <h3 class="h5 fw-bold mt-4">
+                Mark F.
+              </h3>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="review-card">
+
+              <div class="stars">★★★★★</div>
+
+              <p class="fs-5 fst-italic">
+                “Food tastes exactly how I remember growing up here.”
+              </p>
+
+              <h3 class="h5 fw-bold mt-4">
+                Michael Douglas
+              </h3>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="review-card">
+
+              <div class="stars">★★★★★</div>
+
+              <p class="fs-5 fst-italic">
+                “Always delicious and always busy for a reason.”
+              </p>
+
+              <h3 class="h5 fw-bold mt-4">
+                Kyle R.
+              </h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section py-5 text-center">
+      <div class="container py-5">
+
+        <h2 class="display-4 fw-bold mb-4">
+          Craving The King?
+        </h2>
+
+        <p class="lead mb-5 mx-auto" style="max-width: 700px;">
+          Order your favorite hot dogs, bratwursts, fries, and desserts for pickup or delivery today.
+        </p>
+
+        <a
+          href="https://www.doordash.com/store/gus's-hot-dog-king-newport-news-926834/18420549/?pickup=false"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-danger btn-lg rounded-pill px-5 fw-bold"
+        >
+          Order Now On DoorDash
+        </a>
+      </div>
+    </section>
+
+    <!-- Location + Hours -->
+    <section id="location" class="bg-dark text-white py-5">
+      <div class="container py-5">
+
+        <div class="row align-items-center g-5">
+
+          <div class="col-lg-6">
+
+            <h2 class="display-4 fw-bold mb-4">
+              Visit Us Today
+            </h2>
+
+            <p class="lead mb-5">
+              Conveniently located at 10725 Jefferson Ave, Newport News, VA 23601 in Newport News, Virginia.
+            </p>
+
+            <div class="hours-box">
+
+              <h3 class="h3 mb-4 fw-bold">
+                Business Hours
+              </h3>
+
+              <ul class="list-unstyled fs-5 mb-0">
+
+                <li class="mb-3">
+                  Monday: 10:30 AM – 6:00 PM
+                </li>
+
+                <li class="mb-3">
+                  Tuesday – Saturday: 10:30 AM – 8:00 PM
+                </li>
+
+                <li>
+                  Sunday: Closed
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-lg">
+
+              <iframe
+                title="Gus's Hot Dog King Location"
+                src="https://www.google.com/maps?q=Gus's+Hot+Dog+King,+Newport+News,+VA&output=embed"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-white py-5">
+    <div class="container text-center">
+
+      <img
+        src="public/images/HDK_LOGO.webp"
+        alt="Gus's Hot Dog King Logo"
+        width="90"
+        height="90"
+        class="mb-4"
+        loading="lazy"
+      />
+
+      <h2 class="h3 fw-bold mb-3">
+        Gus's Hot Dog King
+      </h2>
+
+      <p class="mb-4 text-light">
+        Serving Newport News Since 1972
+      </p>
+
+      <div class="d-flex justify-content-center gap-4 mb-4 flex-wrap">
+
+        <a
+          href="menu.html"
+          class="footer-link"
+        >
+          Menu
+        </a>
+
+        <a
+          href="https://www.facebook.com/Gusshotdogking"
+          target="_blank"
+          rel="noopener"
+          class="footer-link"
+        >
+          Facebook
+        </a>
+
+      </div>
+
+      <p class="small text-secondary mb-0">
+        © 2026 Gus's Hot Dog King. All Rights Reserved.
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8X7CZDXQSP"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag(){
+      dataLayer.push(arguments);
     }
-  });
-  
-  // Touch/swipe support for mobile
-  let startX = 0;
-  let endX = 0;
-  
-  carousel.addEventListener('touchstart', (e) => {
-    startX = e.touches[0].clientX;
-  });
-  
-  carousel.addEventListener('touchend', (e) => {
-    endX = e.changedTouches[0].clientX;
-    handleSwipe();
-  });
-  
-  function handleSwipe() {
-    const swipeThreshold = 50;
-    const diff = startX - endX;
-    
-    if (Math.abs(diff) > swipeThreshold) {
-      if (diff > 0) {
-        // Swiped left - next slide
-        goToSlide(currentSlide + 1);
-      } else {
-        // Swiped right - previous slide
-        goToSlide(currentSlide - 1);
-      }
-    }
-  }
-  
-  // Initialize first slide
-  goToSlide(0);
-}
 
-  const carousel = document.getElementById("carousel");
-  const slides = carousel.children;
-  const totalSlides = slides.length;
-  let index = 1; // start from the first "real" slide
-  let autoSlideInterval;
+    gtag('js', new Date());
+    gtag('config', 'G-8X7CZDXQSP');
+  </script>
 
-  // Clone first and last slides for seamless looping
-  const firstClone = slides[0].cloneNode(true);
-  const lastClone = slides[totalSlides - 1].cloneNode(true);
-
-  carousel.appendChild(firstClone);
-  carousel.insertBefore(lastClone, slides[0]);
-
-  // Update total slides after cloning
-  const newTotal = carousel.children.length;
-
-  // Start position at first "real" slide
-  carousel.style.transform = `translateX(-${index * 100}%)`;
-
-  function moveToSlide() {
-    carousel.style.transition = "transform 0.6s ease-in-out";
-    carousel.style.transform = `translateX(-${index * 100}%)`;
-  }
-
-  function nextSlide() {
-    index++;
-    moveToSlide();
-  }
-
-  function prevSlide() {
-    index--;
-    moveToSlide();
-  }
-
-  function startAutoSlide() {
-    autoSlideInterval = setInterval(() => {
-      nextSlide();
-    }, 3000);
-  }
-
-  function stopAutoSlide() {
-    clearInterval(autoSlideInterval);
-  }
-
-  // Reset transition at edges for smooth looping
-  carousel.addEventListener("transitionend", () => {
-    if (index === newTotal - 1) {
-      // Reached cloned first slide
-      carousel.style.transition = "none";
-      index = 1; // Jump to real first
-      carousel.style.transform = `translateX(-${index * 100}%)`;
-    } else if (index === 0) {
-      // Reached cloned last slide
-      carousel.style.transition = "none";
-      index = newTotal - 2; // Jump to real last
-      carousel.style.transform = `translateX(-${index * 100}%)`;
-    }
-  });
-
-  // Button controls
-  document.getElementById("nextBtn").addEventListener("click", () => {
-    stopAutoSlide();
-    nextSlide();
-    startAutoSlide();
-  });
-
-  document.getElementById("prevBtn").addEventListener("click", () => {
-    stopAutoSlide();
-    prevSlide();
-    startAutoSlide();
-  });
-
-  // Pause on hover/focus for accessibility
-  carousel.addEventListener("mouseenter", stopAutoSlide);
-  carousel.addEventListener("mouseleave", startAutoSlide);
-
-  // Start the loop
-  startAutoSlide();
-
-
-</script>
-
-  
 </body>
 </html>
 
