@@ -9,12 +9,25 @@ let menuItems = [];
 async function loadMenu() {
   try {
     const response = await fetch("menu.json");
+
+    if (!response.ok) {
+      throw new Error("Could not load menu.json");
+    }
+
     menuItems = await response.json();
 
     populateFilters();
     displayMenu(menuItems);
   } catch (error) {
     console.error("Error loading menu:", error);
+
+    menuContainer.innerHTML = `
+      <div class="col-12">
+        <div class="alert alert-danger text-center">
+          Menu could not be loaded. Please check that menu.json is in the same folder as menu.html.
+        </div>
+      </div>
+    `;
   }
 }
 
@@ -24,8 +37,10 @@ function displayMenu(items) {
 
   if (items.length === 0) {
     menuContainer.innerHTML = `
-      <div class="col-span-full text-center text-gray-500 text-xl py-10">
-        No menu items found.
+      <div class="col-12">
+        <div class="alert alert-warning text-center">
+          No menu items found.
+        </div>
       </div>
     `;
     return;
@@ -33,38 +48,36 @@ function displayMenu(items) {
 
   items.forEach((item) => {
     const card = document.createElement("div");
+    card.className = "col-sm-6 col-lg-4";
 
-    card.className =
-      "bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden border border-gray-200";
+    const tags = Array.isArray(item.tags) ? item.tags : [];
 
     card.innerHTML = `
-      <div class="p-6">
-        <div class="flex justify-between items-start mb-3">
-          <h2 class="text-2xl font-bold text-gray-800">
-            ${item.name}
-          </h2>
+      <article class="menu-item-card">
+        <div class="menu-item-header">
+          <h2>${item.name}</h2>
 
-          <span class="text-xl font-bold text-red-600">
-            $${item.price.toFixed(2)}
+          <span class="menu-price">
+            $${Number(item.price).toFixed(2)}
           </span>
         </div>
 
-        <p class="text-gray-600 mb-4">
+        <p class="menu-category">
           ${item.category}
         </p>
 
-        <div class="flex flex-wrap gap-2">
-          ${item.tags
+        <div class="menu-tags">
+          ${tags
             .map(
               (tag) => `
-            <span class="bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">
-              ${tag}
-            </span>
-          `
+                <span class="menu-tag">
+                  ${tag}
+                </span>
+              `
             )
             .join("")}
         </div>
-      </div>
+      </article>
     `;
 
     menuContainer.appendChild(card);
@@ -73,8 +86,20 @@ function displayMenu(items) {
 
 // POPULATE FILTERS
 function populateFilters() {
-  const categories = [...new Set(menuItems.map((item) => item.category))];
-  const tags = [...new Set(menuItems.flatMap((item) => item.tags))];
+  categoryFilter.innerHTML = `<option value="all">All Categories</option>`;
+  tagFilter.innerHTML = `<option value="all">All Tags</option>`;
+
+  const categories = [
+    ...new Set(menuItems.map((item) => item.category).filter(Boolean)),
+  ];
+
+  const tags = [
+    ...new Set(
+      menuItems
+        .flatMap((item) => (Array.isArray(item.tags) ? item.tags : []))
+        .filter(Boolean)
+    ),
+  ];
 
   categories.forEach((category) => {
     const option = document.createElement("option");
@@ -93,21 +118,23 @@ function populateFilters() {
 
 // FILTER LOGIC
 function filterMenu() {
-  const searchValue = searchInput.value.toLowerCase();
+  const searchValue = searchInput.value.toLowerCase().trim();
   const categoryValue = categoryFilter.value;
   const tagValue = tagFilter.value;
 
   const filtered = menuItems.filter((item) => {
+    const tags = Array.isArray(item.tags) ? item.tags : [];
+
     const matchesSearch =
-      item.name.toLowerCase().includes(searchValue);
+      item.name.toLowerCase().includes(searchValue) ||
+      item.category.toLowerCase().includes(searchValue) ||
+      tags.join(" ").toLowerCase().includes(searchValue);
 
     const matchesCategory =
-      categoryValue === "all" ||
-      item.category === categoryValue;
+      categoryValue === "all" || item.category === categoryValue;
 
     const matchesTag =
-      tagValue === "all" ||
-      item.tags.includes(tagValue);
+      tagValue === "all" || tags.includes(tagValue);
 
     return matchesSearch && matchesCategory && matchesTag;
   });

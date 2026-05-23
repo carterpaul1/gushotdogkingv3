@@ -1,349 +1,238 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-
-    <meta
-      name="description"
-      content="Explore Gus's Hot Dog King's legendary menu—hot dogs, juicy burgers, crispy fries & more, served fresh in Newport News since 1972."
-    />
-
-    <meta
-      name="keywords"
-      content="Gus's Hot Dog King, Newport News hot dogs, Virginia fast food, burgers, chili dogs, fries, local diner"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Menu | Gus's Hot Dog King</title>
 
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Navigation -->
-    <script defer src="navigation.js"></script>
-
-    <!-- Fonts -->
+    <!-- Bootstrap -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600;700&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
 
-    <style>
-      body {
-        font-family: "Open Sans", sans-serif;
-      }
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-      h1,
-      h2,
-      h3 {
-        font-family: "Lobster", cursive;
-      }
-    </style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="menu.css" />
   </head>
 
-  <body class="bg-gray-100 text-gray-900 min-h-screen flex flex-col">
-    <!-- Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-8X7CZDXQSP"
-    ></script>
-
-    <script>
-      window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-
-      gtag("js", new Date());
-      gtag("config", "G-8X7CZDXQSP");
-    </script>
-
-    <!-- HEADER -->
-    <header
-      class="bg-white shadow-sm border-b border-gray-200"
-      role="banner"
-    >
-      <a
-        href="#main-content"
-        class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-purple-900 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg"
-      >
-        Skip to main content
-      </a>
-
-      <div
-        class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between"
-      >
-        <!-- Logo -->
-        <div class="flex items-center gap-4">
+  <body>
+    <!-- SAME NAVBAR STYLE AS INDEX / ABOUT -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
           <img
             src="public/images/HDK_LOGO.webp"
-            alt="Gus's Hot Dog King logo"
-            class="w-20 h-20 sm:w-28 sm:h-28 object-contain"
+            alt="Gus's Hot Dog King Logo"
+            width="64"
+            height="64"
           />
+          <span>Gus's Hot Dog King</span>
+        </a>
 
-          <div>
-            <h1 class="text-2xl sm:text-4xl text-purple-900">
-              Gus's Hot Dog King
-            </h1>
-
-            <p class="text-sm text-gray-600">
-              Serving Newport News Since 1972
-            </p>
-          </div>
-        </div>
-
-        <!-- Mobile Button -->
         <button
-          id="toggleSidebar"
-          aria-label="Open navigation menu"
-          aria-controls="sidebar"
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
           aria-expanded="false"
-          class="sm:hidden bg-purple-900 text-white p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          aria-label="Toggle navigation"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-8 h-8"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
+          <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Nav -->
-        <div id="navSidebar"></div>
+        <div id="mainNavbar" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="menu.html">Menu</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Location</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="btn btn-warning fw-bold px-4" href="tel:7575951630">
+                Call Takeout
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </header>
+    </nav>
 
-    <!-- MAIN -->
-    <main id="main-content" class="flex-1">
+    <main>
       <!-- HERO -->
-      <section
-        class="bg-gradient-to-r from-red-600 to-red-700 text-white"
-      >
-        <div
-          class="max-w-7xl mx-auto px-4 py-16 text-center"
-        >
-          <h2 class="text-4xl sm:text-6xl mb-6">
-            Legendary Hot Dogs & Burgers
-          </h2>
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <p class="hero-subtitle">Newport News Favorite Since 1972</p>
 
-          <p
-            class="max-w-3xl mx-auto text-lg sm:text-xl text-red-100 leading-relaxed"
-          >
-            Family-owned fast food favorites in Newport News,
-            Virginia. From chili dogs and burgers to fries and
-            milkshakes — Gus’s has been serving the community
-            since 1972.
-          </p>
+            <h1>Legendary Hot Dogs, Burgers & Fries</h1>
 
-          <!-- CTA CARD -->
-          <div
-            class="mt-10 bg-white text-gray-900 rounded-3xl shadow-2xl p-8 max-w-3xl mx-auto"
-          >
-            <h3 class="text-3xl text-purple-900 mb-4">
-              Craving Gus’s?
-            </h3>
-
-            <p class="text-lg text-gray-700 mb-6">
-              Call ahead for takeout, dine in with family and
-              friends, or get your favorites delivered right to
-              your door.
+            <p>
+              Fresh chili, crispy fries, burgers, footlongs, shakes, and
+              hometown comfort food served with family tradition.
             </p>
 
-            <div
-              class="flex flex-col sm:flex-row gap-4 justify-center items-center"
-            >
-              <a
-                href="tel:7575951630"
-                class="bg-purple-900 hover:bg-purple-800 text-white font-semibold px-6 py-3 rounded-full transition"
-              >
-                Call 757-595-1630
+            <div class="d-flex flex-column flex-sm-row gap-3">
+              <a href="tel:7575951630" class="btn btn-warning btn-lg">
+                Call for Takeout
               </a>
 
               <a
-                href="https://www.doordash.com/store/gus's-hot-dog-king-newport-news-926834/18420549/?event_type=autocomplete&pickup=false"
+                href="https://www.doordash.com/store/gus's-hot-dog-king-newport-news-926834/18420549/?pickup=false"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full transition"
+                class="btn btn-danger btn-lg doordash-btn"
               >
-                Order on DoorDash
+                Order DoorDash
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- SEARCH + FILTERS -->
-      <section class="max-w-7xl mx-auto px-4 py-10">
-        <div
-          class="bg-white rounded-3xl shadow-lg p-6 flex flex-col lg:flex-row gap-4"
-        >
-          <!-- Search -->
-          <input
-            type="text"
-            id="searchInput"
-            placeholder="Search hot dogs, burgers, fries..."
-            class="flex-1 border border-gray-300 rounded-xl px-4 py-3 text-lg focus:ring-2 focus:ring-red-500 focus:outline-none"
-          />
-
-          <!-- Category -->
-          <select
-            id="categoryFilter"
-            class="border border-gray-300 rounded-xl px-4 py-3 text-lg"
-          >
-            <option value="all">
-              All Categories
-            </option>
-          </select>
-
-          <!-- Tags -->
-          <select
-            id="tagFilter"
-            class="border border-gray-300 rounded-xl px-4 py-3 text-lg"
-          >
-            <option value="all">
-              All Tags
-            </option>
-          </select>
+      <!-- INTRO -->
+      <section class="menu-intro py-5">
+        <div class="container">
+          <h2 class="section-title">Our Menu</h2>
+          <p class="section-subtitle">
+            Browse Gus's classics below. Search by item name, category, or tag.
+          </p>
         </div>
       </section>
 
-      <!-- MENU -->
-      <section class="max-w-7xl mx-auto px-4 pb-20">
-        <div
-          id="menuContainer"
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-        ></div>
+      <!-- FILTERS -->
+      <section class="filter-section py-4">
+        <div class="container">
+          <div class="row g-3 align-items-center">
+            <div class="col-lg-4">
+              <input
+                type="search"
+                id="searchInput"
+                class="form-control form-control-lg"
+                placeholder="Search menu items..."
+                aria-label="Search menu items"
+              />
+            </div>
+
+            <div class="col-lg-4">
+              <select
+                id="categoryFilter"
+                class="form-select form-select-lg"
+                aria-label="Filter menu by category"
+              >
+                <option value="all">All Categories</option>
+              </select>
+            </div>
+
+            <div class="col-lg-4">
+              <select
+                id="tagFilter"
+                class="form-select form-select-lg"
+                aria-label="Filter menu by tag"
+              >
+                <option value="all">All Tags</option>
+              </select>
+            </div>
+          </div>
+        </div>
       </section>
-<!-- LOCATION SECTION -->
-<section class="bg-white border-t border-gray-200 py-16">
-  <div class="max-w-7xl mx-auto px-4">
-    <div
-      class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
-    >
-      <!-- INFO -->
-      <div>
-        <h2 class="text-4xl text-purple-900 mb-6">
-          Visit Gus’s Hot Dog King
-        </h2>
 
-        <p class="text-lg text-gray-700 leading-relaxed mb-8">
-          Stop by for legendary hot dogs, burgers, fries,
-          shakes, and classic fast-food favorites served in
-          Newport News since 1972.
-        </p>
+      <!-- DYNAMIC MENU -->
+      <section class="menu-section py-5">
+        <div class="container">
+          <div id="menuContainer" class="row g-4"></div>
+        </div>
+      </section>
 
-        <div class="space-y-5">
-          <!-- Address -->
-          <div class="flex items-start gap-4">
-            <div
-              class="bg-red-100 text-red-600 p-3 rounded-full"
+      <!-- CTA -->
+      <section class="cta-section text-center">
+        <div class="container">
+          <h2>Ready to Order?</h2>
+          <p>Call ahead for takeout or order delivery online.</p>
+
+          <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mt-4">
+            <a href="tel:7575951630" class="btn btn-warning btn-lg fw-bold">
+              Call Now
+            </a>
+
+            <a
+              href="https://www.doordash.com/store/gus's-hot-dog-king-newport-news-926834/18420549/?pickup=false"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-danger btn-lg fw-bold"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-6 h-6"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M10 2a6 6 0 00-6 6c0 4.05 6 10 6 10s6-5.95 6-10a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z"
-                />
-              </svg>
-            </div>
-
-            <div>
-              <h3 class="font-semibold text-lg text-gray-900">
-                Address
-              </h3>
-
-              <p class="text-gray-600">
-                10725 Jefferson Ave<br />
-                Newport News, VA 23601
-              </p>
-            </div>
-          </div>
-
-          <!-- Phone -->
-          <div class="flex items-start gap-4">
-            <div
-              class="bg-purple-100 text-purple-700 p-3 rounded-full"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-6 h-6"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M2.003 5.884l3.91-1.955a1 1 0 011.09.217l2.1 2.1a1 1 0 01.217 1.09l-1.955 3.91a11.003 11.003 0 005.516 5.516l3.91-1.955a1 1 0 011.09.217l2.1 2.1a1 1 0 01.217 1.09l-1.955 3.91a1 1 0 01-.942.548C8.01 20 0 11.99 0 2.998a1 1 0 01.548-.942z"
-                />
-              </svg>
-            </div>
-
-            <div>
-              <h3 class="font-semibold text-lg text-gray-900">
-                Phone
-              </h3>
-
-              <a
-                href="tel:7575951630"
-                class="text-purple-700 hover:underline"
-              >
-                (757) 595-1630
-              </a>
-            </div>
+              Order Delivery Door Dash
+            </a>
           </div>
         </div>
-      </div>
-
-      <!-- MAP -->
-      <div>
-        <div
-          class="overflow-hidden rounded-3xl shadow-2xl border border-gray-200"
-        >
-          <iframe
-            title="Gus's Hot Dog King Location"
-            src="https://www.google.com/maps?q=Gus's+Hot+Dog+King,+Newport+News,+VA&output=embed"
-            class="w-full h-[450px]"
-            style="border: 0"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-     
-
+      </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer
-      class="bg-yellow-100 border-t border-yellow-300 py-6 text-center text-sm text-gray-700"
-    >
-      <p>
-        © 2026 Gus's Hot Dog King — Newport News, Virginia
-      </p>
+    <!-- SAME FOOTER STYLE AS INDEX / ABOUT -->
+    <footer class="text-white py-5">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-4">
+            <h4>Gus's Hot Dog King</h4>
+            <p class="mb-1">10725 Jefferson Ave</p>
+            <p>Newport News, VA 23601</p>
+            <p>
+              <a class="footer-link" href="tel:7575951630">
+                (757) 595-1630
+              </a>
+            </p>
+          </div>
 
-      <p class="mt-1">
-        Serving legendary hot dogs since 1972.
-      </p>
+          <div class="col-lg-4">
+            <iframe
+              title="Map to Gus's Hot Dog King"
+              src="https://www.google.com/maps?q=10725%20Jefferson%20Ave%20Newport%20News%20VA%2023601&output=embed"
+              width="100%"
+              height="220"
+              style="border:0; border-radius: 16px;"
+              loading="lazy"
+            ></iframe>
+          </div>
+
+          <div class="col-lg-4 d-flex flex-column gap-2">
+            <a class="footer-link" href="index.html">Home</a>
+            <a class="footer-link" href="menu.html">Menu</a>
+            <a class="footer-link" href="contact.html">Location</a>
+            <a
+              class="footer-link"
+              href="https://www.facebook.com/Gusshotdogking"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Facebook
+            </a>
+          </div>
+        </div>
+
+        <div class="text-center pt-4 mt-4 border-top border-secondary">
+          <small>© 2026 Gus's Hot Dog King. All Rights Reserved.</small>
+        </div>
+      </div>
     </footer>
 
-    <!-- MENU SCRIPT -->
     <script src="menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
