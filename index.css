@@ -101,7 +101,7 @@ header {
       rgba(0, 0, 0, 0.28),
       rgba(0, 0, 0, 0.48)
     ),
-    url("public/images/chili_cheese_fries.jpg")
+    url("public/images/loaded_hot_dog.webp")
     center center / cover no-repeat;
 }
 
@@ -432,7 +432,7 @@ footer {
         rgba(0,0,0,0.42),
         rgba(0,0,0,0.58)
       ),
-      url("public/images/chili_cheese_fries.jpg")
+      url("public/images/loaded_hot_dog.webp")
       center center / cover no-repeat;
   }
 

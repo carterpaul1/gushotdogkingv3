@@ -1,542 +1,453 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Gus's Hot Dog King | Newport News Legendary Hot Dogs Since 1972</title>
+    <title>
+      Gus's Hot Dog King | Newport News Legendary Hot Dogs Since 1972
+    </title>
 
-  <meta
-    name="description"
-    content="Serving Newport News since 1972 with legendary hot dogs, bratwursts, fries, and family-friendly dining."
-  />
+    <meta
+      name="description"
+      content="Serving Newport News since 1972 with legendary hot dogs, bratwursts, fries, and family-friendly dining."
+    />
 
-  <meta name="author" content="Gus's Hot Dog King" />
-  <meta name="robots" content="index, follow" />
+    <meta name="author" content="Gus's Hot Dog King" />
+    <meta name="robots" content="index, follow" />
 
-  <link rel="canonical" href="https://www.gushotdogking.com" />
+    <link rel="canonical" href="https://www.gushotdogking.com" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Gus's Hot Dog King" />
-  <meta
-    property="og:description"
-    content="Newport News legendary hot dogs since 1972."
-  />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.gushotdogking.com" />
-  <meta
-    property="og:image"
-    content="https://www.gushotdogking.com/public/images/HDK_LOGO.webp"
-  />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gus's Hot Dog King" />
+    <meta
+      property="og:description"
+      content="Newport News legendary hot dogs since 1972."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.gushotdogking.com" />
+    <meta
+      property="og:image"
+      content="https://www.gushotdogking.com/public/images/HDK_LOGO.webp"
+    />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Gus's Hot Dog King" />
-  <meta
-    name="twitter:description"
-    content="Newport News legendary hot dogs since 1972."
-  />
-  <meta
-    name="twitter:image"
-    content="https://www.gushotdogking.com/public/images/HDK_LOGO.webp"
-  />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Gus's Hot Dog King" />
+    <meta
+      name="twitter:description"
+      content="Newport News legendary hot dogs since 1972."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.gushotdogking.com/public/images/HDK_LOGO.webp"
+    />
 
-  <!-- Favicon -->
-  <link
-    rel="icon"
-    type="image/webp"
-    href="public/images/HDK_LOGO.webp"
-  />
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="public/images/HDK_LOGO.webp" />
 
-  <!-- Bootstrap -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com"
-  />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Open+Sans:wght@400;600;700&display=swap"
-    rel="stylesheet"
-  />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
- <link rel="stylesheet" href="index.css" />
-</head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- Skip Link -->
+    <a
+      href="#main-content"
+      class="visually-hidden-focusable position-absolute top-0 start-0 bg-dark text-white p-3"
+    >
+      Skip to content
+    </a>
 
-  <!-- Skip Link -->
-  <a
-    href="#main-content"
-    class="visually-hidden-focusable position-absolute top-0 start-0 bg-dark text-white p-3"
-  >
-    Skip to content
-  </a>
+    <!-- Navigation -->
+    <header class="sticky-top shadow-sm">
+      <nav class="navbar navbar-expand-lg navbar-light py-3">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center gap-3"
+            href="index.html"
+          >
+            <img
+              src="public/images/HDK_LOGO.webp"
+              alt="Gus's Hot Dog King Logo"
+              width="75"
+              height="75"
+              loading="eager"
+            />
 
-  <!-- Navigation -->
-  <header class="sticky-top shadow-sm">
-    <nav class="navbar navbar-expand-lg navbar-light py-3">
-      <div class="container">
+            <span>Gus's Hot Dog King</span>
+          </a>
 
-        <a
-          class="navbar-brand d-flex align-items-center gap-3"
-          href="index.html"
-        >
-          <img
-            src="public/images/HDK_LOGO.webp"
-            alt="Gus's Hot Dog King Logo"
-            width="75"
-            height="75"
-            loading="eager"
-          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-          <span>Gus's Hot Dog King</span>
-        </a>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNav"
-          aria-controls="mainNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
 
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Location</a>
+              </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="menu.html">Menu</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Location</a>
-            </li>
-
-            <li class="nav-item">
-              <a
-                href="https://www.doordash.com/store/gus's-hot-dog-king-newport-news-926834/18420549/?pickup=false"
-                target="_blank"
-                rel="noopener"
-                class="btn btn-danger rounded-pill px-4 fw-semibold"
-              >
-                Order Door Dash
-              </a>
-            </li>
-
-          </ul>
+              <li class="nav-item">
+                <a
+                  href="https://www.doordash.com/store/gus's-hot-dog-king-newport-news-926834/18420549/?pickup=false"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-danger rounded-pill px-4 fw-semibold"
+                >
+                  Order Door Dash
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <main id="main-content">
+    <main id="main-content">
+      <!-- Hero -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-content mx-auto">
+            <h1>Newport News Legendary Hot Dogs Since 1972</h1>
 
-    <!-- Hero -->
-    <section class="hero-section">
-      <div class="container">
+            <p>
+              Famous hot dogs, beer bratwursts, fresh chili, fries, and family
+              tradition served with hometown hospitality.
+            </p>
 
-        <div class="hero-content mx-auto">
+            <div
+              class="d-flex flex-column flex-sm-row justify-content-center gap-3"
+            >
+              <a
+                href="menu.html"
+                class="btn btn-warning btn-lg rounded-pill px-5 fw-bold"
+              >
+                View Menu
+              </a>
 
-          <h1>
-            Newport News Legendary Hot Dogs Since 1972
-          </h1>
+              <a
+                href="https://www.doordash.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-danger btn-lg fw-bold doordash-btn"
+              >
+                Order DoorDash
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <p>
-            Famous hot dogs, beer bratwursts, fresh chili, fries, and family tradition served with hometown hospitality.
+      <!-- Featured Foods -->
+      <section id="favorites" class="py-5 py-lg-6">
+        <div class="container py-5">
+          <h2 class="section-title">Customer Favorites</h2>
+
+          <p class="section-subtitle">
+            Freshly made local favorites that keep Hampton Roads coming back.
           </p>
 
-          <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+              <div class="card food-card shadow-sm">
+                <img
+                  src="public/images/loaded_hot_dog.webp"
+                  class="card-img-top"
+                  alt="Loaded Hot Dog"
+                  loading="lazy"
+                />
 
-            <a
-              href="menu.html"
-              class="btn btn-warning btn-lg rounded-pill px-5 fw-bold"
-            >
-              View Menu
-            </a>
+                <div class="card-body text-center">
+                  <h3 class="h4 fw-bold">Loaded Hot Dog</h3>
+                </div>
+              </div>
+            </div>
 
-            <a
-              href="https://www.doordash.com/store/gus's-hot-dog-king-newport-news-926834/18420549/?pickup=false"
-              target="_blank"
-              rel="noopener"
-              class="btn btn-outline-light btn-lg rounded-pill px-5"
-            >
-              Get Delivery With Door Dash
-            </a>
+            <div class="col-md-6 col-lg-3">
+              <div class="card food-card shadow-sm">
+                <img
+                  src="public/images/brat.jpg"
+                  class="card-img-top"
+                  alt="Beer Bratwurst"
+                  loading="lazy"
+                />
 
+                <div class="card-body text-center">
+                  <h3 class="h4 fw-bold">Beer Bratwurst</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="card food-card shadow-sm">
+                <img
+                  src="public/images/funnel_fries.jpg"
+                  class="card-img-top"
+                  alt="Funnel Fries"
+                  loading="lazy"
+                />
+
+                <div class="card-body text-center">
+                  <h3 class="h4 fw-bold">Funnel Fries</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="card food-card shadow-sm">
+                <img
+                  src="public/images/banana_pudding.webp"
+                  class="card-img-top"
+                  alt="Banana Pudding"
+                  loading="lazy"
+                />
+
+                <div class="card-body text-center">
+                  <h3 class="h4 fw-bold">Banana Pudding</h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Featured Foods -->
-    <section id="favorites" class="py-5 py-lg-6">
-      <div class="container py-5">
-
-        <h2 class="section-title">
-          Customer Favorites
-        </h2>
-
-        <p class="section-subtitle">
-          Freshly made local favorites that keep Hampton Roads coming back.
-        </p>
-
-        <div class="row g-4">
-
-          <div class="col-md-6 col-lg-3">
-            <div class="card food-card shadow-sm">
-
+      <!-- Story -->
+      <section class="story-section py-5">
+        <div class="container py-5">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
               <img
-                src="public/images/loaded_hot_dog.webp"
-                class="card-img-top"
-                alt="Loaded Hot Dog"
+                src="public/images/gus_making_dog.webp"
+                alt="Gus preparing a hot dog"
+                class="img-fluid rounded-4 shadow-lg"
                 loading="lazy"
               />
-
-              <div class="card-body text-center">
-                <h3 class="h4 fw-bold">
-                  Loaded Hot Dog
-                </h3>
-              </div>
             </div>
-          </div>
 
-          <div class="col-md-6 col-lg-3">
-            <div class="card food-card shadow-sm">
+            <div class="col-lg-6">
+              <h2 class="display-4 fw-bold mb-4">
+                Serving Newport News Since 1972
+              </h2>
 
-              <img
-                src="public/images/brat.jpg"
-                class="card-img-top"
-                alt="Beer Bratwurst"
-                loading="lazy"
-              />
-
-              <div class="card-body text-center">
-                <h3 class="h4 fw-bold">
-                  Beer Bratwurst
-                </h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <div class="card food-card shadow-sm">
-
-              <img
-                src="public/images/funnel_fries.jpg"
-                class="card-img-top"
-                alt="Funnel Fries"
-                loading="lazy"
-              />
-
-              <div class="card-body text-center">
-                <h3 class="h4 fw-bold">
-                  Funnel Fries
-                </h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <div class="card food-card shadow-sm">
-
-              <img
-                src="public/images/banana_pudding.webp"
-                class="card-img-top"
-                alt="Banana Pudding"
-                loading="lazy"
-              />
-
-              <div class="card-body text-center">
-                <h3 class="h4 fw-bold">
-                  Banana Pudding
-                </h3>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Story -->
-    <section class="story-section py-5">
-      <div class="container py-5">
-
-        <div class="row align-items-center g-5">
-
-          <div class="col-lg-6">
-
-            <img
-              src="public/images/gus_making_dog.webp"
-              alt="Gus preparing a hot dog"
-              class="img-fluid rounded-4 shadow-lg"
-              loading="lazy"
-            />
-          </div>
-
-          <div class="col-lg-6">
-
-            <h2 class="display-4 fw-bold mb-4">
-              Serving Newport News Since 1972
-            </h2>
-
-            <p class="lead text-muted mb-4">
-              Gus's Hot Dog King has been a local favorite for generations, serving legendary hot dogs, bratwursts, fries, and comfort food classics.
-            </p>
-
-            <p class="mb-4">
-              Whether you're grabbing lunch, dining with family, or stopping in for a quick bite, we pride ourselves on friendly service, quality food, and hometown tradition.
-            </p>
-
-            <a
-              href="menu.html"
-              class="btn btn-dark btn-lg rounded-pill px-5"
-            >
-              Explore Our Menu
-            </a>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Reviews -->
-    <section id="reviews" class="py-5">
-      <div class="container py-5">
-
-        <h2 class="section-title">
-          What Customers Say
-        </h2>
-
-        <p class="section-subtitle">
-          Loved by locals across Hampton Roads.
-        </p>
-
-        <div class="row g-4">
-
-          <div class="col-lg-4">
-            <div class="review-card">
-
-              <div class="stars">★★★★★</div>
-
-              <p class="fs-5 fst-italic">
-                “Best hot dogs in Hampton Roads. The owners treat you like family.”
+              <p class="lead text-muted mb-4">
+                Gus's Hot Dog King has been a local favorite for generations,
+                serving legendary hot dogs, bratwursts, fries, and comfort food
+                classics.
               </p>
 
-              <h3 class="h5 fw-bold mt-4">
-                Mark F.
-              </h3>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="review-card">
-
-              <div class="stars">★★★★★</div>
-
-              <p class="fs-5 fst-italic">
-                “Food tastes exactly how I remember growing up here.”
+              <p class="mb-4">
+                Whether you're grabbing lunch, dining with family, or stopping
+                in for a quick bite, we pride ourselves on friendly service,
+                quality food, and hometown tradition.
               </p>
 
-              <h3 class="h5 fw-bold mt-4">
-                Michael Douglas
-              </h3>
+              <a href="menu.html" class="btn btn-dark btn-lg rounded-pill px-5">
+                Explore Our Menu
+              </a>
             </div>
           </div>
-
-          <div class="col-lg-4">
-            <div class="review-card">
-
-              <div class="stars">★★★★★</div>
-
-              <p class="fs-5 fst-italic">
-                “Always delicious and always busy for a reason.”
-              </p>
-
-              <h3 class="h5 fw-bold mt-4">
-                Kyle R.
-              </h3>
-            </div>
-          </div>
-
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CTA -->
-    <section class="cta-section py-5 text-center">
-      <div class="container py-5">
+      <!-- Reviews -->
+      <section id="reviews" class="py-5">
+        <div class="container py-5">
+          <h2 class="section-title">What Customers Say</h2>
 
-        <h2 class="display-4 fw-bold mb-4">
-          Craving The King?
-        </h2>
+          <p class="section-subtitle">Loved by locals across Hampton Roads.</p>
 
-        <p class="lead mb-5 mx-auto" style="max-width: 700px;">
-          Order your favorite hot dogs, bratwursts, fries, and desserts for pickup or delivery today.
+          <div class="row g-4">
+            <div class="col-lg-4">
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+
+                <p class="fs-5 fst-italic">
+                  “Best hot dogs in Hampton Roads. The owners treat you like
+                  family.”
+                </p>
+
+                <h3 class="h5 fw-bold mt-4">Mark F.</h3>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+
+                <p class="fs-5 fst-italic">
+                  “Food tastes exactly how I remember growing up here.”
+                </p>
+
+                <h3 class="h5 fw-bold mt-4">Michael Douglas</h3>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+
+                <p class="fs-5 fst-italic">
+                  “Always delicious and always busy for a reason.”
+                </p>
+
+                <h3 class="h5 fw-bold mt-4">Kyle R.</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta-section py-5 text-center">
+        <div class="container py-5">
+          <h2 class="display-4 fw-bold mb-4">Craving The King?</h2>
+
+          <p class="lead mb-5 mx-auto" style="max-width: 700px">
+            Order your favorite hot dogs, bratwursts, fries, and desserts for
+            pickup or delivery today.
+          </p>
+
+          <a
+            href="https://www.doordash.com/store/gus's-hot-dog-king-newport-news-926834/18420549/?pickup=false"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-danger btn-lg rounded-pill px-5 fw-bold"
+          >
+            Order Now On DoorDash
+          </a>
+        </div>
+      </section>
+
+      <!-- Location + Hours -->
+      <section id="location" class="bg-dark text-white py-5">
+        <div class="container py-5">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <h2 class="display-4 fw-bold mb-4">Visit Us Today</h2>
+
+              <p class="lead mb-5">
+                Conveniently located at 10725 Jefferson Ave, Newport News, VA
+                23601 in Newport News, Virginia.
+              </p>
+
+              <div class="hours-box">
+                <h3 class="h3 mb-4 fw-bold">Business Hours</h3>
+
+                <ul class="list-unstyled fs-5 mb-0">
+                  <li class="mb-3">Monday: 10:30 AM – 6:00 PM</li>
+
+                  <li class="mb-3">Tuesday – Saturday: 10:30 AM – 8:00 PM</li>
+
+                  <li>Sunday: Closed</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-lg">
+                <iframe
+                  title="Gus's Hot Dog King Location"
+                  src="https://www.google.com/maps?q=Gus's+Hot+Dog+King,+Newport+News,+VA&output=embed"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-white py-5">
+      <div class="container text-center">
+        <img
+          src="public/images/HDK_LOGO.webp"
+          alt="Gus's Hot Dog King Logo"
+          width="90"
+          height="90"
+          class="mb-4"
+          loading="lazy"
+        />
+
+        <h2 class="h3 fw-bold mb-3">Gus's Hot Dog King</h2>
+
+        <p class="mb-4 text-light">Serving Newport News Since 1972</p>
+
+        <div class="d-flex justify-content-center gap-4 mb-4 flex-wrap">
+          <a href="menu.html" class="footer-link"> Menu </a>
+
+          <a
+            href="https://www.facebook.com/Gusshotdogking"
+            target="_blank"
+            rel="noopener"
+            class="footer-link"
+          >
+            Facebook
+          </a>
+        </div>
+
+        <p class="small text-secondary mb-0">
+          © 2026 Gus's Hot Dog King. All Rights Reserved.
         </p>
-
-        <a
-          href="https://www.doordash.com/store/gus's-hot-dog-king-newport-news-926834/18420549/?pickup=false"
-          target="_blank"
-          rel="noopener"
-          class="btn btn-danger btn-lg rounded-pill px-5 fw-bold"
-        >
-          Order Now On DoorDash
-        </a>
       </div>
-    </section>
+    </footer>
 
-    <!-- Location + Hours -->
-    <section id="location" class="bg-dark text-white py-5">
-      <div class="container py-5">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-        <div class="row align-items-center g-5">
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8X7CZDXQSP"
+    ></script>
 
-          <div class="col-lg-6">
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-            <h2 class="display-4 fw-bold mb-4">
-              Visit Us Today
-            </h2>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
 
-            <p class="lead mb-5">
-              Conveniently located at 10725 Jefferson Ave, Newport News, VA 23601 in Newport News, Virginia.
-            </p>
-
-            <div class="hours-box">
-
-              <h3 class="h3 mb-4 fw-bold">
-                Business Hours
-              </h3>
-
-              <ul class="list-unstyled fs-5 mb-0">
-
-                <li class="mb-3">
-                  Monday: 10:30 AM – 6:00 PM
-                </li>
-
-                <li class="mb-3">
-                  Tuesday – Saturday: 10:30 AM – 8:00 PM
-                </li>
-
-                <li>
-                  Sunday: Closed
-                </li>
-
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-lg">
-
-              <iframe
-                title="Gus's Hot Dog King Location"
-                src="https://www.google.com/maps?q=Gus's+Hot+Dog+King,+Newport+News,+VA&output=embed"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="text-white py-5">
-    <div class="container text-center">
-
-      <img
-        src="public/images/HDK_LOGO.webp"
-        alt="Gus's Hot Dog King Logo"
-        width="90"
-        height="90"
-        class="mb-4"
-        loading="lazy"
-      />
-
-      <h2 class="h3 fw-bold mb-3">
-        Gus's Hot Dog King
-      </h2>
-
-      <p class="mb-4 text-light">
-        Serving Newport News Since 1972
-      </p>
-
-      <div class="d-flex justify-content-center gap-4 mb-4 flex-wrap">
-
-        <a
-          href="menu.html"
-          class="footer-link"
-        >
-          Menu
-        </a>
-
-        <a
-          href="https://www.facebook.com/Gusshotdogking"
-          target="_blank"
-          rel="noopener"
-          class="footer-link"
-        >
-          Facebook
-        </a>
-
-      </div>
-
-      <p class="small text-secondary mb-0">
-        © 2026 Gus's Hot Dog King. All Rights Reserved.
-      </p>
-
-    </div>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  ></script>
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8X7CZDXQSP"></script>
-
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag(){
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-    gtag('config', 'G-8X7CZDXQSP');
-  </script>
-
-</body>
+      gtag("js", new Date());
+      gtag("config", "G-8X7CZDXQSP");
+    </script>
+  </body>
 </html>
-
