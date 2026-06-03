@@ -29,24 +29,9 @@ body *::after {
   box-sizing: border-box;
 }
 
-/* FIXED: prevents zoomed-out Bootstrap layout */
 .container {
   width: 100%;
   max-width: 1140px;
-}
-
-/* Wider only for hero */
-.hero-section .container {
-  max-width: 1320px;
-}
-
-/* Professional readable width */
-.menu-intro .container,
-.filter-section .container,
-.menu-section .container,
-.cta-section .container,
-footer .container {
-  max-width: 1180px;
 }
 
 h1,
@@ -60,6 +45,28 @@ h4,
 
 p {
   line-height: 1.7;
+}
+
+/* =========================
+   ACCESSIBILITY
+========================= */
+
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 1rem;
+  z-index: 9999;
+
+  background: #111;
+  color: #fff;
+
+  padding: 0.75rem 1rem;
+
+  border-radius: 8px;
+}
+
+.skip-link:focus {
+  top: 1rem;
 }
 
 /* =========================
@@ -94,211 +101,424 @@ p {
 }
 
 /* =========================
-   HERO
+   HERO SECTION
 ========================= */
+
+/* =========================
+   HERO SECTION
+========================= */
+
 .hero-section {
   position: relative;
-  min-height: 82vh;
+
+  min-height: 88vh;
+
   display: flex;
   align-items: center;
-  padding: 140px 0 100px;
+
+  padding: 120px 0;
+
   overflow: hidden;
 
   background:
     linear-gradient(
-      rgba(0, 0, 0, 0.72),
-      rgba(0, 0, 0, 0.72)
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
     ),
-    url("public/images/chili_cheese_fries.jpg")
+    url("public/images/gus_with_mobile.webp")
     center center / cover no-repeat;
 
   color: white;
 }
 
+/* HERO CONTENT */
+
 .hero-content {
   position: relative;
+
   width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: 850px;
+
+  padding: 0;
+
+  margin: 0;
+
   background: transparent;
-  border-radius: 0;
-  box-shadow: none;
-  color: white;
+
   backdrop-filter: none;
-  text-align: center;
+
+  border-radius: 0;
+
+  box-shadow: none;
+
+  color: white;
 }
+
+/* HERO SUBTITLE */
 
 .hero-subtitle {
   text-transform: uppercase;
+
   letter-spacing: 2px;
+
   font-weight: 800;
+
   color: var(--primary-color);
+
   margin-bottom: 1rem;
 }
 
+/* HERO TITLE */
+
 .hero-content h1 {
   font-size: clamp(3.5rem, 6vw, 6.5rem);
-  line-height: 0.98;
+
+  line-height: 0.95;
+
   font-weight: 700;
+
   margin-bottom: 1.5rem;
+
   color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
+
+  text-shadow:
+    0 4px 20px rgba(0,0,0,0.45);
 }
 
+/* HERO TEXT */
+
 .hero-content p {
-  max-width: 760px;
-  margin: 0 auto 2rem;
-  font-size: 1.35rem;
+  max-width: 700px;
+
+  font-size: 1.25rem;
+
   line-height: 1.8;
+
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.92);
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+
+  color: rgba(255,255,255,0.92);
+
+  margin-bottom: 2rem;
+
+  text-shadow:
+    0 2px 12px rgba(0,0,0,0.40);
 }
+
+/* HERO BUTTONS */
 
 .hero-content .btn {
   min-width: 220px;
+
   font-weight: 700;
+
   border-radius: 999px;
+
   padding: 0.95rem 1.9rem;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
 }
 
 .hero-content .btn-warning {
   background: var(--primary-color);
+
   border: none;
+
   color: #111;
+
+  box-shadow:
+    0 10px 24px rgba(244, 180, 0, 0.28);
 }
 
 .hero-content .btn-warning:hover {
   background: #ffca28;
+
   color: #111;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 16px 30px rgba(244, 180, 0, 0.38);
 }
 
-.doordash-btn,
 .hero-content .btn-danger {
   background: var(--accent-color);
+
   border: 2px solid var(--accent-color);
+
   color: white;
+
+  box-shadow:
+    0 10px 24px rgba(198, 40, 40, 0.28);
 }
 
-.doordash-btn:hover,
 .hero-content .btn-danger:hover {
   background: #a91f1f;
+
   border-color: #a91f1f;
+
   color: white;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 16px 30px rgba(198, 40, 40, 0.38);
 }
 
 /* =========================
-   INTRO / FILTERS
+   TABLET
+========================= */
+
+@media (max-width: 991px) {
+
+  .hero-section {
+    min-height: 76vh;
+
+    padding: 100px 0;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 576px) {
+
+  .hero-section {
+
+    min-height: 70vh;
+
+    text-align: center;
+
+    padding: 90px 0 60px;
+
+    background:
+      linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+      ),
+      url("public/images/gus_with_mobile.webp")
+      center center / cover no-repeat;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.8rem;
+
+    line-height: 1.05;
+
+    margin-bottom: 1rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+
+    line-height: 1.7;
+
+    max-width: 100%;
+
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-content .btn {
+    width: 100%;
+
+    max-width: 100%;
+
+    min-width: auto;
+  }
+}
+/* =========================
+   SECTION SYSTEM
 ========================= */
 
 section {
   width: 100%;
 }
 
-.menu-intro,
-.filter-section {
+.contact-intro,
+.contact-details {
   background: var(--light-bg);
 }
 
 .section-title {
   font-size: clamp(2.6rem, 4vw, 4.5rem);
-  margin-bottom: 1rem;
-  text-align: center;
+
   font-weight: 700;
+
+  text-align: center;
+
+  margin-bottom: 1rem;
 }
 
 .section-subtitle {
-  text-align: center;
-  color: #666;
   max-width: 760px;
+
   margin: 0 auto;
+
+  color: #666;
+
   font-size: 1.15rem;
-}
 
-.filter-section .form-control,
-.filter-section .form-select {
-  border-radius: 16px;
-  min-height: 58px;
-  border: 2px solid #e5e5e5;
-  font-weight: 600;
-  box-shadow: none;
-}
-
-.filter-section .form-control:focus,
-.filter-section .form-select:focus {
-  border-color: var(--accent-color);
-  box-shadow: 0 0 0 0.2rem rgba(198, 40, 40, 0.12);
+  text-align: center;
 }
 
 /* =========================
-   MENU CARDS
+   CONTACT CARDS
 ========================= */
 
-.menu-section {
-  background: #fff;
-}
-
-.menu-item-card {
-  background: white;
-  border-radius: 22px;
-  padding: 1.6rem;
-  border: 1px solid #eee;
+.contact-card {
   height: 100%;
-  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+
+  background: #fff;
+
+  border: 1px solid #eee;
+
+  border-radius: 24px;
+
+  padding: 2rem;
+
+  box-shadow:
+    0 14px 35px rgba(0,0,0,0.08);
+
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
 }
 
-.menu-item-card:hover {
+.contact-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.12);
+
+  box-shadow:
+    0 18px 42px rgba(0,0,0,0.12);
 }
 
-.menu-item-header {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-}
+.contact-icon {
+  width: 58px;
+  height: 58px;
 
-.menu-item-header h2 {
-  font-size: 1.35rem;
-  font-weight: 800;
-  margin: 0;
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: var(--primary-color);
+
   color: #111;
+
+  font-size: 1.5rem;
+
+  margin-bottom: 1.2rem;
 }
 
-.menu-category {
-  color: #666;
-  font-weight: 600;
-  margin: 0.75rem 0 1rem;
-}
+.contact-card h3 {
+  font-size: 1.5rem;
 
-.menu-price {
-  color: var(--accent-color);
-  font-size: 1.25rem;
   font-weight: 800;
-  white-space: nowrap;
+
+  margin-bottom: 0.85rem;
 }
 
-.menu-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+.contact-card p {
+  color: #555;
+
+  margin-bottom: 1rem;
 }
 
-.menu-tag {
-  background: #fff3cd;
-  color: #7a5600;
-  font-size: 0.85rem;
-  font-weight: 700;
-  padding: 0.35rem 0.75rem;
-  border-radius: 999px;
+.contact-card a {
+  color: var(--accent-color);
+
+  font-weight: 800;
+
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
 }
 
 /* =========================
-   CTA
+   LOCATION SECTION
+========================= */
+
+.location-section {
+  background: #111;
+
+  color: #fff;
+}
+
+.location-info-box {
+  background: rgba(255,255,255,0.08);
+
+  border-radius: 24px;
+
+  padding: 2rem;
+
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.location-info-box h2 {
+  font-size: clamp(2.6rem, 4vw, 4.8rem);
+
+  font-weight: 700;
+
+  margin-bottom: 1rem;
+}
+
+.location-info-box p {
+  color: rgba(255,255,255,0.82);
+}
+
+.location-info-box strong {
+  color: #fff;
+}
+
+.location-info-box a:not(.btn) {
+  color: #fff;
+
+  font-weight: 700;
+}
+
+.map-wrapper {
+  width: 100%;
+
+  min-height: 380px;
+
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 20px 45px rgba(0,0,0,0.3);
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 380px;
+  border: 0;
+}
+
+/* =========================
+   CTA SECTION
 ========================= */
 
 .cta-section {
@@ -310,25 +530,28 @@ section {
     url("public/images/loaded_hot_dog.webp")
     center / cover no-repeat;
 
-  color: white;
+  color: #fff;
+
   padding: 100px 0 !important;
 }
 
 .cta-section h2 {
   font-size: clamp(2.8rem, 5vw, 5rem);
+
   margin-bottom: 1rem;
 }
 
 .cta-section p {
-  font-size: 1.25rem;
   max-width: 720px;
+
   margin: 0 auto;
+
+  font-size: 1.25rem;
 }
 
 /* =========================
    FOOTER
 ========================= */
-
 footer {
   background-color: #111;
 }
@@ -349,23 +572,17 @@ footer {
 ========================= */
 
 @media (max-width: 991px) {
-  .container,
-  .hero-section .container,
-  .menu-intro .container,
-  .filter-section .container,
-  .menu-section .container,
-  .cta-section .container,
-  footer .container {
+
+  .container {
     max-width: 720px;
   }
 
-  .hero-section {
-    min-height: 76vh;
-    padding: 120px 0 60px;
-  }
+  
 
-  .hero-content {
-    max-width: 100%;
+  .map-wrapper,
+  .map-wrapper iframe {
+    min-height: 340px;
+    height: 340px;
   }
 }
 
@@ -374,13 +591,8 @@ footer {
 ========================= */
 
 @media (max-width: 576px) {
-  .container,
-  .hero-section .container,
-  .menu-intro .container,
-  .filter-section .container,
-  .menu-section .container,
-  .cta-section .container,
-  footer .container {
+
+  .container {
     width: 92%;
     max-width: 540px;
   }
@@ -394,64 +606,7 @@ footer {
     height: 54px;
   }
 
-  .hero-section {
-    min-height: 68vh;
-    padding: 100px 0 35px;
-    align-items: flex-end;
-  }
-
-  .hero-section {
-  min-height: 70vh;
-  align-items: center;
-  text-align: center;
-  padding: 95px 0 60px;
-
-  background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.72),
-      rgba(0, 0, 0, 0.72)
-    ),
-    url("public/images/chili_cheese_fries.jpg")
-    center center / cover no-repeat;
-}
-
-.hero-content {
-  width: 100%;
-  max-width: 100%;
-  padding: 0;
-  background: transparent;
-  border-radius: 0;
-  box-shadow: none;
-  margin: 0;
-  color: white;
-}
-
-.hero-subtitle {
-  font-size: 0.9rem;
-  letter-spacing: 1.5px;
-  color: var(--primary-color);
-}
-
-.hero-content h1 {
-  font-size: 2.8rem;
-  line-height: 1.05;
-  margin-bottom: 1rem;
-  color: white;
-}
-
-.hero-content p {
-  max-width: 100%;
-  font-size: 1rem;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-  color: rgba(255, 255, 255, 0.92);
-}
-
-.hero-content .btn {
-  width: 100%;
-  max-width: 100%;
-  min-width: auto;
-}
+  
   .section-title {
     font-size: 2.5rem;
   }
@@ -460,9 +615,9 @@ footer {
     font-size: 1.05rem;
   }
 
-  .menu-item-header {
-    flex-direction: column;
-    gap: 0.35rem;
+  .contact-card,
+  .location-info-box {
+    padding: 1.5rem;
   }
 
   .cta-section {

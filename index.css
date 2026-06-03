@@ -86,85 +86,68 @@ header {
 
 .hero-section {
   position: relative;
-
   min-height: 82vh;
-
   display: flex;
-  align-items: flex-end;
-
-  padding: 140px 0 80px;
-
+  align-items: center;
+  text-align: center;
+  padding: 140px 0 100px;
   overflow: hidden;
 
   background:
     linear-gradient(
-      rgba(0, 0, 0, 0.28),
-      rgba(0, 0, 0, 0.48)
+      rgba(0, 0, 0, 0.72),
+      rgba(0, 0, 0, 0.72)
     ),
     url("public/images/loaded_hot_dog.webp")
     center center / cover no-repeat;
-}
 
-/* CONTENT CARD */
+  color: white;
+}
 
 .hero-content {
   position: relative;
-
   width: 100%;
-  max-width: 760px;
-
-  background: rgba(255,255,255,0.98);
-
-  padding: 3rem;
-
-  border-radius: 30px;
-
-  box-shadow:
-    0 25px 60px rgba(0,0,0,0.28);
-
-  color: #111;
-
-  backdrop-filter: blur(4px);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  color: white;
+  backdrop-filter: none;
 }
 
-/* HERO TITLE */
+.hero-subtitle {
+  color: var(--primary-color);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
 
 .hero-content h1 {
-  font-size: clamp(3.4rem, 6vw, 6.5rem);
-
+  font-size: clamp(3.5rem, 6vw, 6.5rem);
   line-height: 0.98;
-
   font-weight: 700;
-
   margin-bottom: 1.5rem;
-
-  color: #111;
+  color: white;
 }
-
-/* HERO TEXT */
 
 .hero-content p {
-  font-size: 1.2rem;
-
-  line-height: 1.9;
-
+  font-size: 1.35rem;
+  line-height: 1.8;
   font-weight: 600;
-
-  color: #444;
-
-  margin-bottom: 2rem;
-
-  max-width: 620px;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 auto 2rem;
+  max-width: 760px;
 }
-
-/* HERO BUTTONS */
 
 .hero-content .btn {
   min-width: 220px;
   font-weight: 700;
   border-radius: 999px;
+  padding: 0.95rem 1.9rem;
 }
-
 /* =========================
    SECTION SYSTEM
 ========================= */
@@ -339,26 +322,19 @@ section {
   width: 100%;
 }
 
-/* =========================
-   FOOTER
-========================= */
-
 footer {
   background-color: #111;
 }
 
 .footer-link {
-  color: rgba(255, 255, 255, 0.8);
-
+  color: rgba(255,255,255,0.85);
   text-decoration: none;
-
   font-weight: 700;
-
   transition: color 0.25s ease;
 }
 
 .footer-link:hover {
-  color: white;
+  color: #f4b400;
 }
 
 /* =========================
@@ -419,18 +395,24 @@ footer {
 
   /* HERO */
 
+  @media (max-width: 576px) {
+
   .hero-section {
 
-    min-height: 68vh;
+    min-height: 70vh;
 
-    padding: 100px 0 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    align-items: flex-end;
+    text-align: center;
+
+    padding: 100px 0 60px;
 
     background:
       linear-gradient(
-        rgba(0,0,0,0.42),
-        rgba(0,0,0,0.58)
+        rgba(0,0,0,0.72),
+        rgba(0,0,0,0.72)
       ),
       url("public/images/loaded_hot_dog.webp")
       center center / cover no-repeat;
@@ -439,30 +421,48 @@ footer {
   .hero-content {
 
     width: 100%;
+    max-width: 100%;
 
-    padding: 1.8rem;
+    padding: 0;
 
-    border-radius: 22px;
+    background: transparent;
 
-    background: rgba(255,255,255,0.98);
+    border-radius: 0;
 
-    margin-bottom: -30px;
+    box-shadow: none;
+
+    margin: 0;
+  }
+
+  .hero-subtitle {
+
+    font-size: 0.9rem;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 0.75rem;
   }
 
   .hero-content h1 {
 
-    font-size: 2.6rem;
+    font-size: 2.8rem;
 
     line-height: 1.05;
 
     margin-bottom: 1rem;
+
+    color: #fff;
   }
 
   .hero-content p {
 
     font-size: 1rem;
 
-    line-height: 1.75;
+    line-height: 1.7;
+
+    max-width: 100%;
+
+    color: rgba(255,255,255,0.9);
 
     margin-bottom: 1.5rem;
   }
@@ -472,7 +472,14 @@ footer {
     width: 100%;
 
     max-width: 100%;
+
+    min-width: auto;
   }
+
+  .hero-content .d-flex {
+    gap: 0.75rem !important;
+  }
+}
 
   /* TITLES */
 
