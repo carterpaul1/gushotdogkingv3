@@ -265,6 +265,99 @@ section {
 }
 
 /* =========================
+   MERCHANDISE
+========================= */
+
+.merch-section {
+  padding: 3rem 0;
+  background: var(--primary-color);
+}
+
+.merch-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 420px);
+  align-items: center;
+  gap: clamp(2.5rem, 6vw, 6rem);
+  padding: clamp(2rem, 5vw, 5rem);
+  border-radius: 32px;
+  background: #111;
+  color: #fff;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.22);
+}
+
+.merch-eyebrow {
+  margin-bottom: 0.75rem;
+  color: var(--primary-color);
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.merch-copy h2 {
+  max-width: 850px;
+  margin-bottom: 1.5rem;
+  font-size: clamp(3rem, 5vw, 5.5rem);
+  line-height: 1.02;
+}
+
+.merch-copy > p:not(.merch-eyebrow):not(.merch-url-label) {
+  max-width: 760px;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1.2rem;
+}
+
+.merch-url-label {
+  margin: 1.75rem 0 0.25rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.merch-url {
+  color: #fff;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+  text-underline-offset: 0.25rem;
+}
+
+.merch-url:hover {
+  color: var(--primary-color);
+}
+
+.merch-qr-wrap {
+  padding: 1.25rem;
+  border-radius: 24px;
+  background: #fff;
+  color: #111;
+  text-align: center;
+}
+
+.merch-qr-wrap a {
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.merch-qr {
+  display: block;
+  width: 145%;
+  max-width: none;
+  height: auto;
+  transform: translate(-15%, -19%);
+}
+
+.merch-qr-wrap p {
+  margin: 1rem 0 0;
+  font-weight: 700;
+}
+
+/* =========================
    STORY
 ========================= */
 
@@ -435,6 +528,15 @@ footer {
     text-align: left;
   }
 
+  .merch-card {
+    grid-template-columns: 1fr;
+  }
+
+  .merch-qr-wrap {
+    width: min(100%, 430px);
+    margin: 0 auto;
+  }
+
 }
 
 /* =========================
@@ -572,6 +674,33 @@ footer {
 
   .notice-copy p {
     font-size: 1rem;
+  }
+
+  .merch-section {
+    padding: 1.5rem 0;
+  }
+
+  .merch-card {
+    gap: 2rem;
+    padding: 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .merch-copy h2 {
+    font-size: 2.8rem;
+  }
+
+  .merch-copy > p:not(.merch-eyebrow):not(.merch-url-label) {
+    font-size: 1rem;
+  }
+
+  .merch-copy .btn {
+    width: 100%;
+  }
+
+  .merch-qr-wrap {
+    padding: 0.85rem;
   }
 
   /* CARDS */

@@ -368,6 +368,95 @@ header {
 }
 
 /* =========================
+   MERCHANDISE
+========================= */
+
+.about-merch {
+  padding: 130px 0;
+  background: #f4c542;
+}
+
+.about-merch-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 420px);
+  align-items: center;
+  gap: clamp(2.5rem, 6vw, 6rem);
+  padding: clamp(2rem, 5vw, 5rem);
+  border-radius: 32px;
+  background: var(--purple);
+  color: #fff;
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.2);
+}
+
+.about-merch-copy .eyebrow {
+  color: #f4c542;
+}
+
+.about-merch-copy h2 {
+  max-width: 850px;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  font-family: "Lobster", cursive;
+  font-size: clamp(4rem, 5vw, 6.5rem);
+  line-height: 1.02;
+}
+
+.about-merch-copy > p:not(.eyebrow):not(.about-merch-url-label) {
+  max-width: 760px;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+}
+
+.about-merch-url-label {
+  margin: 1.75rem 0 0.25rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.about-merch-url {
+  color: #fff;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 800;
+  overflow-wrap: anywhere;
+  text-underline-offset: 0.25rem;
+}
+
+.about-merch-url:hover {
+  color: #f4c542;
+}
+
+.about-merch-qr-wrap {
+  padding: 1.25rem;
+  border-radius: 24px;
+  background: #fff;
+  color: #241b18;
+  text-align: center;
+}
+
+.about-merch-qr-wrap a {
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.about-merch-qr {
+  display: block;
+  width: 145%;
+  max-width: none;
+  height: auto;
+  transform: translate(-15%, -19%);
+}
+
+.about-merch-qr-wrap p {
+  margin: 1rem 0 0;
+  font-weight: 800;
+}
+
+/* =========================
    CTA
 ========================= */
 
@@ -452,6 +541,15 @@ footer {
   .timeline-year {
     width: fit-content;
   }
+
+  .about-merch-card {
+    grid-template-columns: 1fr;
+  }
+
+  .about-merch-qr-wrap {
+    width: min(100%, 430px);
+    margin: 0 auto;
+  }
 }
 
 /* =========================
@@ -529,6 +627,7 @@ footer {
   .about-intro,
   .about-values,
   .about-timeline-section,
+  .about-merch,
   .about-cta {
     padding: 80px 0;
   }
@@ -554,6 +653,29 @@ footer {
 
   .timeline-card {
     padding: 24px;
+  }
+
+  .about-merch-card {
+    gap: 2rem;
+    padding: 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .about-merch-copy h2 {
+    font-size: 3rem;
+  }
+
+  .about-merch-copy > p:not(.eyebrow):not(.about-merch-url-label) {
+    font-size: 1rem;
+  }
+
+  .about-merch-copy .btn {
+    width: 100%;
+  }
+
+  .about-merch-qr-wrap {
+    padding: 0.85rem;
   }
 
   .about-footer {
