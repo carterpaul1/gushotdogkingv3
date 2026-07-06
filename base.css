@@ -62,6 +62,11 @@ header {
   padding: 1rem 0;
 }
 
+.navbar > .container {
+  width: min(94%, 1700px);
+  max-width: 1700px;
+}
+
 .navbar-brand span {
   font-size: 1.65rem;
   font-weight: 700;
@@ -100,6 +105,11 @@ footer {
 }
 
 @media (max-width: 991px) {
+  .navbar > .container {
+    width: min(92%, 960px);
+    max-width: 960px;
+  }
+
   .navbar-brand span {
     font-size: 1.35rem;
   }
@@ -115,6 +125,11 @@ footer {
 }
 
 @media (max-width: 576px) {
+  .navbar > .container {
+    width: min(92%, 540px);
+    max-width: 540px;
+  }
+
   .navbar-brand span {
     font-size: 1.1rem;
   }

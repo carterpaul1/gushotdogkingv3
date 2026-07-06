@@ -28,59 +28,70 @@
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- SAME NAV STYLE AS OTHER PAGES -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-          <img
-            src="public/images/HDK_LOGO.webp"
-            alt="Gus's Hot Dog King Logo"
-            width="64"
-            height="64"
-          />
-          <span>Gus's Hot Dog King</span>
-        </a>
+    <!-- Navigation -->
+    <header class="sticky-top shadow-sm">
+      <nav class="navbar navbar-expand-lg navbar-light py-3">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center gap-3"
+            href="index.html"
+          >
+            <img
+              src="public/images/HDK_LOGO.webp"
+              alt="Gus's Hot Dog King Logo"
+              width="75"
+              height="75"
+              loading="eager"
+            />
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNavbar"
-          aria-controls="mainNavbar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+            <span>Gus's Hot Dog King</span>
+          </a>
 
-        <div id="mainNavbar" class="collapse navbar-collapse">
-          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-            <li class="nav-item">
-              <a class="nav-link" href="menu.html">Menu</a>
-            </li>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
 
-            <li class="nav-item">
-              <a class="nav-link active" href="contact.html" aria-current="page">Location</a>
-            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
 
-            <li class="nav-item">
-              <a class="btn btn-warning fw-bold px-4" href="tel:7575951630">
-                Call Takeout
-              </a>
-            </li>
-          </ul>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html" aria-current="page">Location</a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="https://www.doordash.com/store/gus's-hot-dog-king-newport-news-926834/18420549/?pickup=false"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-danger rounded-pill px-4 fw-semibold"
+                >
+                  Order DoorDash
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-
+      </nav>
+    </header>
     <main id="main-content">
       <!-- HERO WITH BACKGROUND IMAGE + CTA -->
       <section class="hero-section">

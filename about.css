@@ -414,9 +414,6 @@
   .container {
     width: min(92%, 960px);
   }
-.navbar-collapse {
-    padding: 18px 0;
-  }
 
   .about-hero {
     min-height: 620px;
