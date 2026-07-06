@@ -250,14 +250,30 @@
   grid-template-columns: 240px 1fr;
   gap: 55px;
   margin-bottom: 46px;
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.65s ease,
+    transform 0.65s ease;
+}
+
+.timeline-item.reveal-pending {
   opacity: 0;
   transform: translateY(28px);
-  transition: all 0.65s ease;
 }
 
 .timeline-item.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .timeline-item,
+  .timeline-item.reveal-pending,
+  .timeline-item.is-visible {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .timeline-year {

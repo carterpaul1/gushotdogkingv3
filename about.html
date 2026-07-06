@@ -92,12 +92,13 @@
         </div>
       </nav>
     </header>
-    <!-- HERO -->
-    <header class="about-hero">
-      <div class="container">
-        <div class="about-hero-content">
+    <main id="main-content">
+      <!-- HERO -->
+      <section class="about-hero" aria-labelledby="about-page-title">
+        <div class="container">
+          <div class="about-hero-content">
           <p class="eyebrow">Newport News Favorite Since 1972</p>
-          <h1>Our Story</h1>
+          <h1 id="about-page-title">Our Story</h1>
           <p>
             A family-owned local landmark built on tradition, comfort food, and
             generations of loyal customers.
@@ -107,18 +108,17 @@
             <a href="menu.html" class="btn btn-gold">View Menu</a>
             <a href="contact.html" class="btn btn-outline-light">Visit Us</a>
           </div>
+          </div>
         </div>
-      </div>
-    </header>
+      </section>
 
-    <!-- INTRO -->
-    <main id="main-content">
-      <section class="about-intro">
+      <!-- INTRO -->
+      <section class="about-intro" aria-labelledby="about-intro-title">
         <div class="container">
           <div class="row align-items-center g-5">
             <div class="col-lg-6">
               <p class="eyebrow purple">Family. Food. Tradition.</p>
-              <h2>A Newport News Classic</h2>
+              <h2 id="about-intro-title">A Newport News Classic</h2>
               <p>
                 Gus's Hot Dog King began with one man&rsquo;s dream. After
                 migrating from Greece in 1968, Gus opened his first hot dog
@@ -382,6 +382,12 @@
     <script>
       const items = document.querySelectorAll(".reveal");
 
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        items.forEach((item) => item.classList.add("is-visible"));
+      } else {
+        items.forEach((item) => item.classList.add("reveal-pending"));
+      }
+
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
@@ -393,7 +399,11 @@
         { threshold: 0.2 }
       );
 
-      items.forEach((item) => observer.observe(item));
+      items.forEach((item) => {
+        if (!item.classList.contains("is-visible")) {
+          observer.observe(item);
+        }
+      });
     </script>
   </body>
 </html>

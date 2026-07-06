@@ -139,3 +139,36 @@ footer {
     height: 54px;
   }
 }
+
+
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.form-control:focus-visible,
+.form-select:focus-visible {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(17, 17, 17, 0.25);
+}
+
+.nav-link:focus-visible,
+.footer-link:focus-visible {
+  color: var(--accent-color) !important;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

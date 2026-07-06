@@ -133,46 +133,60 @@
       </section>
 
       <!-- FILTERS -->
-      <section class="filter-section py-4">
+      <section class="filter-section py-4" aria-labelledby="menu-filter-title">
         <div class="container">
-          <div class="row g-3 align-items-center">
+          <form id="menuFilters" class="row g-3 align-items-end" role="search">
+            <h2 id="menu-filter-title" class="visually-hidden">
+              Filter menu items
+            </h2>
+
             <div class="col-lg-4">
+              <label for="searchInput" class="form-label fw-bold">
+                Search menu
+              </label>
               <input
                 type="search"
                 id="searchInput"
                 class="form-control form-control-lg"
                 placeholder="Search menu items..."
-                aria-label="Search menu items"
+                autocomplete="off"
               />
             </div>
 
             <div class="col-lg-4">
-              <select
-                id="categoryFilter"
-                class="form-select form-select-lg"
-                aria-label="Filter menu by category"
-              >
+              <label for="categoryFilter" class="form-label fw-bold">
+                Category
+              </label>
+              <select id="categoryFilter" class="form-select form-select-lg">
                 <option value="all">All Categories</option>
               </select>
             </div>
 
             <div class="col-lg-4">
-              <select
-                id="tagFilter"
-                class="form-select form-select-lg"
-                aria-label="Filter menu by tag"
-              >
+              <label for="tagFilter" class="form-label fw-bold">
+                Tag
+              </label>
+              <select id="tagFilter" class="form-select form-select-lg">
                 <option value="all">All Tags</option>
               </select>
             </div>
-          </div>
+          </form>
         </div>
       </section>
 
       <!-- DYNAMIC MENU -->
-      <section class="menu-section py-5">
+      <section class="menu-section py-5" aria-labelledby="menu-results-title">
         <div class="container">
-          <div id="menuContainer" class="row g-4"></div>
+          <h2 id="menu-results-title" class="visually-hidden">
+            Menu results
+          </h2>
+          <p id="menuStatus" class="visually-hidden" aria-live="polite"></p>
+          <div
+            id="menuContainer"
+            class="row g-4"
+            aria-live="polite"
+            aria-busy="true"
+          ></div>
         </div>
       </section>
 
