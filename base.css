@@ -104,6 +104,10 @@ footer {
   color: var(--primary-color);
 }
 
+.footer-copy {
+  color: #d6d6d6;
+}
+
 @media (max-width: 991px) {
   .navbar > .container {
     width: min(92%, 960px);
