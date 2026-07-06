@@ -62,17 +62,13 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="index.css" />
   </head>
 
   <body>
     <!-- Skip Link -->
-    <a
-      href="#main-content"
-      class="visually-hidden-focusable position-absolute top-0 start-0 bg-dark text-white p-3"
-    >
-      Skip to content
-    </a>
+    <a href="#main-content" class="skip-link">Skip to content</a>
 
     <!-- Navigation -->
     <header class="sticky-top shadow-sm">
@@ -108,7 +104,7 @@
           <div class="collapse navbar-collapse" id="mainNav">
             <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link active" href="index.html" aria-current="page">Home</a>
               </li>
 
               <li class="nav-item">
@@ -372,11 +368,11 @@
           <div class="row g-4">
             <div class="col-lg-4">
               <div class="review-card">
-                <div class="stars">★★★★★</div>
+                <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
 
                 <p class="fs-5 fst-italic">
-                  “Best hot dogs in Hampton Roads. The owners treat you like
-                  family.”
+                  &ldquo;Best hot dogs in Hampton Roads. The owners treat you like
+                  family.&rdquo;
                 </p>
 
                 <h3 class="h5 fw-bold mt-4">Mark F.</h3>
@@ -385,10 +381,10 @@
 
             <div class="col-lg-4">
               <div class="review-card">
-                <div class="stars">★★★★★</div>
+                <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
 
                 <p class="fs-5 fst-italic">
-                  “Food tastes exactly how I remember growing up here.”
+                  &ldquo;Food tastes exactly how I remember growing up here.&rdquo;
                 </p>
 
                 <h3 class="h5 fw-bold mt-4">Michael Douglas</h3>
@@ -397,10 +393,10 @@
 
             <div class="col-lg-4">
               <div class="review-card">
-                <div class="stars">★★★★★</div>
+                <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
 
                 <p class="fs-5 fst-italic">
-                  “Always delicious and always busy for a reason.”
+                  &ldquo;Always delicious and always busy for a reason.&rdquo;
                 </p>
 
                 <h3 class="h5 fw-bold mt-4">Kyle R.</h3>
@@ -510,7 +506,7 @@
         </div>
 
         <p class="small text-secondary mb-0">
-          © 2026 Gus's Hot Dog King. All Rights Reserved.
+          &copy; 2026 Gus's Hot Dog King. All Rights Reserved.
         </p>
       </div>
     </footer>
